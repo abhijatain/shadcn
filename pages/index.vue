@@ -212,7 +212,7 @@ import {
        <div class="flex flex-row justify-around w-full md:hidden">
         <Home class="h-5 w-5 " />
         <Newspaper class="h-5 w-5" />
-        <ChartColumn class="h-5 w-5"/>
+     
         <Search class=" h-5 w-5 " />
        </div>
         
