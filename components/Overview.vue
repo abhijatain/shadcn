@@ -2,21 +2,23 @@
 
 
 const data = [
-  { name: 'Jan', total: Math.floor(Math.random() * 5000) + 1000 },
-  { name: 'Feb', total: Math.floor(Math.random() * 5000) + 1000 },
-  { name: 'Mar', total: Math.floor(Math.random() * 5000) + 1000 },
-  { name: 'Apr', total: Math.floor(Math.random() * 5000) + 1000 },
-  { name: 'May', total: Math.floor(Math.random() * 5000) + 1000 },
-  { name: 'Jun', total: Math.floor(Math.random() * 5000) + 1000 },
-  { name: 'Jul', total: Math.floor(Math.random() * 5000) + 1000 },
-  { name: 'Aug', total: Math.floor(Math.random() * 5000) + 1000 },
-  { name: 'Sep', total: Math.floor(Math.random() * 5000) + 1000 },
-  { name: 'Oct', total: Math.floor(Math.random() * 5000) + 1000 },
-  { name: 'Nov', total: Math.floor(Math.random() * 5000) + 1000 },
-  { name: 'Dec', total: Math.floor(Math.random() * 5000) + 1000 },
+  { name: 'Mon', left: Math.floor(Math.random() * 2000) + 500, center: Math.floor(Math.random() * 2000) + 500, right: Math.floor(Math.random() * 2000) + 500 },
+  { name: 'Tues', left: Math.floor(Math.random() * 2000) + 500, center: Math.floor(Math.random() * 2000) + 500, right: Math.floor(Math.random() * 2000) + 500  },
+  { name: 'Wed', left: Math.floor(Math.random() * 2000) + 500, center: Math.floor(Math.random() * 2000) + 500, right: Math.floor(Math.random() * 2000) + 500  },
+  { name: 'Thurs', left: Math.floor(Math.random() * 2000) + 500, center: Math.floor(Math.random() * 2000) + 500, right: Math.floor(Math.random() * 2000) + 500  },
+  { name: 'Fri', left: Math.floor(Math.random() * 2000) + 500, center: Math.floor(Math.random() * 2000) + 500 , right: Math.floor(Math.random() * 2000) + 500 },
+  { name: 'Sat', left: Math.floor(Math.random() * 2000) + 500, center: Math.floor(Math.random() * 2000) + 500 , right: Math.floor(Math.random() * 2000) + 500 },
+  { name: 'Sun', left: Math.floor(Math.random() * 2000) + 500, center: Math.floor(Math.random() * 2000) + 500 , right: Math.floor(Math.random() * 2000) + 500 },
 ]
 </script>
 
 <template>
-  <BarChart :data="data" :categories="['total']" :index="'name'" :rounded-corners="4" :colors="['#16a34a']"/>
+  <BarChart
+    index="name"
+    :data="data"
+    :categories="['left', 'center','right']"
+    :colors="['#035397','#399918','#E8630A']"
+    :rounded-corners="4"
+    :type="'stacked'"
+  />
 </template>
