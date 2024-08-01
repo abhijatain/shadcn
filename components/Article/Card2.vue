@@ -17,8 +17,8 @@
               <p class="mt-2 font-semibold text-lg text-wrap">Rahul Gandhi Criticizes Modi’s Recent Financial Reforms</p>
               <div class="flex gap-3 flex-col">
                 <div class="flex gap-2 p-2 flex-col mb-6">
-                  <ProgressBar :value="85" color="#E8630A" lean="Right" text="" height="6"/>
-                  <ProgressBar :value="65" color="#399918" lean="Center" text="" height="6"/>
+                  <ProgressBar :value="85" color="#E8630A" lean="Right" text="Content right  85% " height="16"/>
+                  <ProgressBar :value="65" color="#399918" lean="Center" text="Author views center  65% " height="16"/>
                 </div>
               </div>
             </div>

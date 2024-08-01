@@ -219,6 +219,61 @@ const items = [
   'https://cdn.pixabay.com/photo/2024/02/27/00/13/heliconia-8599119_1280.jpg',
   'https://cdn.pixabay.com/photo/2024/06/21/08/21/hut-8843868_1280.jpg',
 ];
+
+const articles2 = ref([
+  
+  {
+    title: "Modi’s Financial Reforms and Their Impact on the Economy",
+    source: 'The Guardian',
+    date: 'May 19, 2024',
+    topicLean: 70,
+    authorLean: 85,
+    topicLeanText: 'Topic covers left views',
+    authorLeanText: "Author views are center",
+    topicLeanReason: 'The article reviews Modi’s financial reforms, highlighting their impact on the economy with a left-leaning perspective.',
+    authorLeanReason: 'The author maintains a neutral stance but provides a critical perspective on the financial reforms.',
+    replies: 230,
+    views: '280K',
+    topicColor: '#035397', // Left
+    authorColor: '#399918', // Light Green (Center)
+    topicLeanValue: 'left',
+    authorLeanValue: 'center'
+  },
+  {
+    title: "Rahul Gandhi’s View on Modi’s Economic Reforms",
+    source: 'The New Indian Express',
+    date: 'May 20, 2024',
+    topicLean: 75,
+    authorLean: 90,
+    topicLeanText: 'Topic covers left views',
+    authorLeanText: "Author views are center",
+    topicLeanReason: 'The article covers Rahul Gandhi’s perspective on Modi’s economic reforms, reflecting left-leaning views.',
+    authorLeanReason: 'The author provides a balanced view but highlights criticisms of the reforms.',
+    replies: 160,
+    views: '225K',
+    topicColor: '#035397', // Left
+    authorColor: '#399918', // Light Green (Center)
+    topicLeanValue: 'left',
+    authorLeanValue: 'center'
+  },
+  {
+    title: "Economic Policies Under Modi: A Comprehensive Review",
+    source: 'Livemint',
+    date: 'May 21, 2024',
+    topicLean: 60,
+    authorLean: 75,
+    topicLeanText: 'Topic covers center views',
+    authorLeanText: "Author views are center",
+    topicLeanReason: 'The article offers a comprehensive review of economic policies under Modi, with a center-leaning perspective.',
+    authorLeanReason: 'The author presents a balanced view with a focus on the effectiveness of the policies.',
+    replies: 210,
+    views: '270K',
+    topicColor: '#399918', // Light Green (Center)
+    authorColor: '#399918', // Light Green (Center)
+    topicLeanValue: 'center',
+    authorLeanValue: 'center'
+  },
+]);
 </script>
 
 <template>
@@ -268,6 +323,7 @@ const items = [
                         Top picks for you. Updated daily.
                       </p>
                     </div>
+                    <Button class="mx-auto mt-3  flex">Read More</Button>
                   </div>
                   <Separator class="my-4" />
                   <div class="relative">
@@ -294,6 +350,7 @@ const items = [
                         Top picks for you. Updated daily.
                       </p>
                     </div>
+                    <Button class="mx-auto mt-3  flex">Read More</Button>
                   </div>
                   <Separator class="my-4" />
                   <div class="relative">
@@ -321,6 +378,33 @@ const items = [
                     </ScrollArea>
                   </div>
                   <Separator class="my-4" />
+                  <div class="flex items-center justify-between md:hidden">
+                    <div class="space-y-1">
+                      <h2 class="text-2xl font-semibold tracking-tight">
+                        Factual & Unbiased News
+                      </h2>
+                      <p class="text-sm text-muted-foreground">
+                        Top picks for you. Updated daily.
+                      </p>
+                    </div>
+                  </div>
+                  <Separator class="my-4 md:hidden" />
+                  <div class="md:hidden">
+                    
+                      <div class="flex flex-col justify-center">
+                        <ArticleCard4
+                        v-for="(article, index) in articles2" :key="index" :article="article"
+                          class=""
+                          aspect-ratio="portrait"
+                          :width="550"
+                          
+                        />
+                      </div>
+                      <Button class="mx-auto mt-3  flex">Read More</Button>
+                    
+                  </div>
+                  
+                  <Separator class="my-4" />
                   <div class="flex items-center justify-between">
                     <div class="space-y-1">
                       <h2 class="text-2xl font-semibold tracking-tight">
@@ -329,7 +413,9 @@ const items = [
                       <p class="text-sm text-muted-foreground">
                         Top picks for you. Updated daily.
                       </p>
+                      
                     </div>
+                    <Button class="mx-auto mt-3  flex">Read More</Button>
                   </div>
                   <Separator class="my-4" />
                   <div class="relative">
@@ -354,7 +440,9 @@ const items = [
                     <p class="text-sm text-muted-foreground">
                       Your personal playlists. Updated daily.
                     </p>
+
                   </div>
+                  
                   <Separator class="my-4" />
                   <div class="relative">
                     <ScrollArea class=" w-96 md:w-full whitespace-nowrap">
