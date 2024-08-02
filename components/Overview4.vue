@@ -35,6 +35,6 @@ const callbacks = {
 <template>
   <VisSingleContainer :data="data" height="min(60vh,75vw)">
     <VisSankey v-bind="callbacks" :labelFit="FitMode.Wrap" :labelForceWordBreak="false" :labelMaxWidth="150"
-      :labelVerticalAlign="VerticalAlign.Middle" :nodePadding="20" :subLabelPlacement="SankeySubLabelPlacement.Inline" :orientation="'vertical'"/>
+      :labelVerticalAlign="VerticalAlign.Middle" :nodePadding="20" :subLabelPlacement="SankeySubLabelPlacement.Inline" />
   </VisSingleContainer>
 </template>
