@@ -302,7 +302,7 @@ const articles2 = ref([
                       News
                     </TabsTrigger>
                     <TabsTrigger value="podcasts">
-                      Youtube
+                      Scams
                     </TabsTrigger>
                     <TabsTrigger value="overview" >
                       Stats

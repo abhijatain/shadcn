@@ -2,12 +2,12 @@
     <div>
       <h3 class=" my-3">Political Leanings of Indian Newspapers and Channels</h3>
       <VisBulletLegend :items="chartLabels.map(d => ({ name: d.legend }))" class=" my-3" :color="color"/>
-      <VisXYContainer :height="isSmallScreen ? 600 : 800" :yDirection="Direction.South">
+      <VisXYContainer :height="isSmallScreen ? 600 : 800" :yDirection="Direction.South" >
         <VisStackedBar :data="data" :x="x" :y="y" :color="color" :orientation="Orientation.Horizontal" />
         <VisTooltip :triggers="{ [StackedBar.selectors.bar]: tooltipTemplate }" />
         <VisAxis type="x" label="Coverage of each channel" />
-        <VisAxis type="y" :tickTextWidth="isSmallScreen ? 75 : null" :tickTextFitMode="FitMode.Trim"
-          :label="isSmallScreen ? null : 'Media Outlet'" :numTicks="data.length" :tickFormat="tickFormat" />
+        <VisAxis type="y" :tickTextWidth="isSmallScreen ? 75 : null" 
+          :label="isSmallScreen ? null : 'Media Outlet'" :numTicks="data.length" :tickFormat="tickFormat" :style="{ 'grid': { 'stroke': 'none' } }"/>
       </VisXYContainer>
     </div>
   </template>
@@ -82,10 +82,15 @@ function tooltipTemplate(d) {
   const total = `Total: <b>${d.total}</b> of coverage</br>`
   const stats = chartLabels.map(l => l.tooltip(d)).join(' | ')
   return `
-    <div style="font-size: 12px; background-color: white; border: 1px solid #ccc; border-radius: 8px; padding: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <div style="font-size: 12px; background-color: white; border: 1px solid #ccc; border-radius: 8px; padding: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);color:black">
       ${title}${total}${stats}
     </div>
   `
 }
   </script>
   
+  <style scoped>
+.vis-axis-grid {
+  stroke: none;
+}
+</style>
