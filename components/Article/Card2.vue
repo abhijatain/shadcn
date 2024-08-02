@@ -1,9 +1,9 @@
 <template>
 
-<div class="antialiased text-gray-900 relative" style="width: 300px; height: 400px;">
+<div class="antialiased text-gray-900 relative" style="width: 300px; height: 300px;">
       <div class="flex items-center justify-center">
         <div class="bg-white rounded-lg overflow-hidden dark:bg-black dark:text-white relative">
-          <img class="h-[400px] object-cover object-end" :src="items" width="300" alt="Image" />
+          <img class="h-[300px] object-cover object-end" :src="items" width="300" alt="Image" />
           <div class="absolute inset-0 p-3 bg-gradient-to-t from-black/70 via-black/40 to-transparent dark:bg-gradient-to-t dark:from-black/70 dark:via-black/40 dark:to-transparent text-white flex flex-col justify-between">
             <div>
               <div class="flex items-baseline p-2">
