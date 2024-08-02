@@ -4,6 +4,13 @@
  
 @layer base {
   :root {
+    --vis-color0: #035397;
+  --vis-color1: #399918;
+  --vis-color2: #E8630A;
+  --vis-color3: #A6CC74;
+  --vis-color4: #00C19A;
+  --vis-color5: #6859BE;
+
     --vis-tooltip-background-color: none !important;
     --vis-tooltip-border-color: none !important;
     --vis-tooltip-text-color: none !important;

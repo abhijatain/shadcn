@@ -511,6 +511,8 @@ const articles2 = ref([
               </CardHeader>
               <CardContent class="pl-2">
                 <Overview />
+                <Overview2 />
+                <Overview3 />
               </CardContent>
             </Card>
             <Card class="col-span-3">
@@ -645,6 +647,8 @@ const articles2 = ref([
               </CardHeader>
               <CardContent class="pl-2">
                 <Overview />
+                <Overview2 />
+                <Overview3 />
               </CardContent>
             </Card>
             <Card class="col-span-3">
