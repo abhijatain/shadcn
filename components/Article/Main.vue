@@ -510,20 +510,31 @@ const articles2 = ref([
                 <CardTitle>Overview</CardTitle>
               </CardHeader>
               <CardContent class="pl-2">
-                <Overview />
-                <Overview2 />
+                
                 <Overview3 />
               </CardContent>
             </Card>
-            <Card class="col-span-3">
+          </div>
+          <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-7 md:hidden">
+            <Card class="col-span-4">
               <CardHeader>
-                <CardTitle>Recent Sales</CardTitle>
-                <CardDescription>
-                  You made 265 sales this month.
-                </CardDescription>
+                <CardTitle>Overview</CardTitle>
               </CardHeader>
-              <CardContent>
-                <RecentSales />
+              <CardContent class="pl-2">
+                <Overview />
+                
+              </CardContent>
+            </Card>
+          </div>
+            <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-7 md:hidden">
+            <Card class="col-span-4">
+              <CardHeader>
+                <CardTitle>Overview</CardTitle>
+              </CardHeader>
+              <CardContent class="pl-2">
+     
+                <Overview2 />
+               
               </CardContent>
             </Card>
           </div>
@@ -640,29 +651,38 @@ const articles2 = ref([
               </CardContent>
             </Card>
           </div>
-          <div class="md:grid gap-4 md:grid-cols-2 lg:grid-cols-7 hidden ">
+          <div class="md:grid gap-4 md:grid-cols-2 lg:grid-cols-7 hidden">
             <Card class="col-span-4">
               <CardHeader>
                 <CardTitle>Overview</CardTitle>
               </CardHeader>
               <CardContent class="pl-2">
-                <Overview />
-                <Overview2 />
+                
                 <Overview3 />
               </CardContent>
             </Card>
             <Card class="col-span-3">
               <CardHeader>
-                <CardTitle>Recent Sales</CardTitle>
-                <CardDescription>
-                  You made 265 sales this month.
-                </CardDescription>
+                <CardTitle>Overview</CardTitle>
               </CardHeader>
-              <CardContent>
-                <RecentSales />
+              <CardContent class="pl-2">
+                <Overview />
+                
+              </CardContent>
+              <Card class="col-span-4">
+              <CardHeader>
+                <CardTitle>Overview</CardTitle>
+              </CardHeader>
+              <CardContent class="pl-2">
+     
+                <Overview2 />
+               
               </CardContent>
             </Card>
+            </Card>
           </div>
+          
+            
         </TabsContent>
       </Tabs>
     </div>
