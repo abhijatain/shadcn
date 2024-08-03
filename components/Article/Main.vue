@@ -504,8 +504,8 @@ const articles2 = ref([
           </TabsTrigger>
         </TabsList>
         <TabsContent value="overview" class="space-y-4">
-            <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-7 md:hidden rotate-90 mb-[320px]">
-            <Card class="  w-[700px]">
+            <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-7 md:hidden ">
+            <Card class=" ">
               <CardHeader>
                 <CardTitle>Overview</CardTitle>
               </CardHeader>
