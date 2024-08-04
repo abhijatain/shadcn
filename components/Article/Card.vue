@@ -14,7 +14,7 @@
   
       <!-- Title -->
       <div>
-        <NuxtLink to="/discussions/post">
+        <NuxtLink to="/post">
         <h1 class="mb-1 merriweather-bold text-xl text-wrap">
           {{ article.title }}
         </h1>
