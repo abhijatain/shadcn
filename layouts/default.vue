@@ -22,6 +22,20 @@ import {
     <h1 class="font-bold text-center text-4xl p-4 font-mono">
     NOSIDES
   </h1>
+  <Breadcrumb class="flex flex-row container">
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink as-child>
+                <a href="/">Dashboard</a>
+              </BreadcrumbLink>
+            </BreadcrumbItem>
+            
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>Article</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
   <div class="flex min-h-screen w-full flex-col bg-muted/40 border-t-0">
     <aside class="fixed inset-y-0 left-0 z-10 hidden w-14 flex-col border-r bg-background sm:flex">
       <nav class="flex flex-col items-center gap-4 px-2 py-4">
@@ -188,25 +202,7 @@ import {
             </nav>
           </SheetContent>
         </Sheet>
-        <Breadcrumb class="hidden md:flex">
-          <BreadcrumbList>
-            <BreadcrumbItem>
-              <BreadcrumbLink as-child>
-                <a href="#">Dashboard</a>
-              </BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbLink as-child>
-                <a href="#">Products</a>
-              </BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbPage>All Products</BreadcrumbPage>
-            </BreadcrumbItem>
-          </BreadcrumbList>
-        </Breadcrumb>
+        
        <div class="flex flex-row justify-around w-full md:hidden">
         <Home class="h-5 w-5 " />
         <Newspaper class="h-5 w-5" />
