@@ -1,4 +1,5 @@
 <template>
+  <ScrollArea>
     <div class=" mx-auto container">
   
   
@@ -141,7 +142,7 @@
   
   <Separator label="Similar News"  class="my-4"/>
 </div>
-
+</ScrollArea>
 </template>
 
 <script setup>
