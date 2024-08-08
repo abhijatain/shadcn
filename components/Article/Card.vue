@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white p-3 dark:bg-black dark:text-white rounded-lg flex flex-col gap-3 max-w-[500px] ">
+    <div class=" p-3 rounded-lg flex flex-col gap-3 max-w-[500px] ">
       <!-- Header -->
       <div class="flex flex-row gap-4 rounded-xl my-auto w-full text-start justify-between">
         <div class="flex flex-row gap-4 my-auto text-start">

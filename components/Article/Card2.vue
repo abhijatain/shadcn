@@ -1,14 +1,14 @@
 <template>
 
-<div class="antialiased text-gray-900 relative" style="width: 300px; height: 300px;">
+<div class="antialiased  relative" style="width: 300px; height: 300px;">
       <div class="flex items-center justify-center">
-        <div class="bg-white rounded-lg overflow-hidden dark:bg-black dark:text-white relative">
+        <div class=" rounded-lg overflow-hidden  relative">
           <img class="h-[300px] object-cover object-end" :src="items" width="300" alt="Image" />
-          <div class="absolute inset-0 p-3 bg-gradient-to-t from-black/70 via-black/40 to-transparent dark:bg-gradient-to-t dark:from-black/70 dark:via-black/40 dark:to-transparent text-white flex flex-col justify-between">
+          <div class="absolute inset-0 p-3   flex flex-col justify-between">
             <div>
               <div class="flex items-baseline p-2">
-                <span class="inline-block bg-teal-200 text-teal-800 py-1 px-4 text-xs rounded-full uppercase font-semibold tracking-wide">New</span>
-                <div class="ml-2 text-white text-xs uppercase font-semibold tracking-wide">
+                <span class="inline-block  py-1 px-4 text-xs rounded-full uppercase font-semibold tracking-wide">New</span>
+                <div class="ml-2 text-xs uppercase font-semibold tracking-wide">
                   The Hindu 
                 </div>
               </div>

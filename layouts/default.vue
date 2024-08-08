@@ -22,7 +22,7 @@ import {
     <h1 class="font-bold text-center text-4xl p-4 font-mono">
     NOSIDES
   </h1>
-  <Breadcrumb class="flex flex-row container">
+  <Breadcrumb class="flex flex-row ms-[65px]">
           <BreadcrumbList>
             <BreadcrumbItem>
               <BreadcrumbLink as-child>
@@ -35,12 +35,12 @@ import {
               <BreadcrumbPage>Article</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
-        </Breadcrumb>
+  </Breadcrumb>
   <div class="flex min-h-screen w-full flex-col bg-muted/40 border-t-0">
     <aside class="fixed inset-y-0 left-0 z-10 hidden w-14 flex-col border-r bg-background sm:flex">
       <nav class="flex flex-col items-center gap-4 px-2 py-4">
         <a
-          href="#"
+          href="/"
           class="group flex h-9 w-9 shrink-0 items-center justify-center gap-2 rounded-full bg-primary text-lg font-semibold text-primary-foreground md:h-8 md:w-8 md:text-base"
         >
           <Package2 class="h-4 w-4 transition-all group-hover:scale-110" />
@@ -126,6 +126,8 @@ import {
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
+        <DarkMode class=" h-5 w-5 " />
+       
       </nav>
       <nav class="mt-auto flex flex-col items-center gap-4 px-2 py-4">
         <TooltipProvider>
@@ -208,9 +210,10 @@ import {
         <Newspaper class="h-5 w-5" />
      
         <Search class=" h-5 w-5 " />
+        <DarkMode class=" h-5 w-5 " />
        </div>
         
-       <DarkMode class=" h-5 w-5 " />
+       
       </header>
       <Separator class="mb-4" />
       <main class="mb-16">

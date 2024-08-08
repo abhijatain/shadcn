@@ -331,7 +331,6 @@ const articles2 = ref([
                       <div class="flex space-x-4 pb-4">
                         <ArticleCard3 
                           v-for="(item, index) in items" :key="index" :items="item"
-                          class=" shadow-lg dark:shadow-blue-800/50 shadow-blue-500/50"
                           aspect-ratio="portrait"
                           :width="550"
                           
@@ -358,7 +357,6 @@ const articles2 = ref([
                       <div class="flex space-x-2 pb-4">
                         <ArticleCard 
                           v-for="(article, index) in articles" :key="index" :article="article"
-                          class=" shadow-lg dark:shadow-blue-800/50 shadow-blue-500/50"
                          
                           style="width: 300px;"
                           
