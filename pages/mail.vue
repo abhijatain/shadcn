@@ -1,15 +1,14 @@
-<script " setup>
+<script  setup>
 
-import { accounts, mails } from '../data/mails'
+import { articles } from '../data/articles'
 </script>
 
 <template>
 
-  <div class=" flex-col flex">
+  <div class=" flex-col flex ">
     <Mail
-      :accounts="accounts"
-      :mails="mails"
-      :nav-collapsed-size="4"
+      :articles="articles"
+      
     />
   </div>
 </template>

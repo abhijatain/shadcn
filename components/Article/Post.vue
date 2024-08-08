@@ -1,20 +1,13 @@
 <template>
     <div class=" mx-auto container">
-  <div class="flex gap-3 flex-col">
-    <div class="flex w-full gap-2">
-      <ProgressBar :value="85" color="#035397" lean="Left" text="Topic covers left views" height="20" />
-    </div>
-    <div class="flex w-full gap-2">
-      <ProgressBar :value="65" color="#E8630A" lean="Right" text="Author view's are Right" height="20" />
-    </div>
-  </div>
+  
   
   <div class="p-3 rounded-lg flex flex-col items-center justify-between md:flex-row gap-3">
     <div class="flex flex-row gap-4 rounded-xl md:hidden my-auto w-full text-start justify-between">
       <div class="flex flex-row gap-4 my-auto text-start">
         <img class="rounded-xl h-8 md:h-12" src="https://planetabled.com/wp-content/uploads/2019/07/The-Hindu-Logo.jpg" alt="Jese image">
         <p class="justify-start text-xs md:hidden w-full">
-          <span class="font-bold">The Hindu</span><br> May 12, 2024
+          <span class="font-bold">{{ article.source }}</span><br> {{ article.date }}
         </p>
       </div>
       <div class="flex flex-row gap-4"></div>
@@ -22,7 +15,7 @@
     
     <div class="block md:hidden">
       <h1 class="mb-1 text-xl">
-        People will break Modi's 'chakravyuh': Rahul Gandhi on PSBs collecting crores as penalty
+{{article.title}} {{article.title}}
       </h1>
     </div>
     
@@ -32,24 +25,24 @@
         <div class="flex flex-col gap-1 p-2">
           <div class="flex flex-row justify-between">
             <p class="text-xs mb-2">
-              <span class="font-bold">The Hindu</span> | May 12, 2024
+              <span class="font-bold">{{ article.source }}</span> | {{ article.date }}
             </p>
           </div>
         </div>
         <h5 class="mb-2 text-xl">
-          People will break Modi's 'chakravyuh': Rahul Gandhi on PSBs collecting crores as penalty
+          {{article.title}} {{article.title}}
         </h5>
       </div>
     </div>
     
-    <div class="flex flex-row gap-2 w-full md:w-40">
+    <div class="flex flex-row gap-2 w-full md:w-40 ">
       <div class="md:block flex flex-row my-2 px-1 border rounded-lg text-xs items-center">
         <p class="p-1 font-bold text-xs md:text-center">
           235
         </p>
         <hr class="hidden md:block">
         <span class="md:hidden">|</span>
-        <p class="p-1 text-xs">
+        <p class="p-1 text-xs text-center">
           Replies
         </p>
       </div>
@@ -59,13 +52,20 @@
         </p>
         <hr class="hidden md:block">
         <span class="md:hidden">|</span>
-        <p class="p-1 text-xs">
+        <p class="p-1 text-xs text-center">
           Views
         </p>
       </div>
     </div>
   </div>
-  
+  <div class="flex gap-3 flex-col mb-4">
+    <div class="flex w-full gap-2">
+      <ProgressBar :value="article.topicLean" :color="article.topicColor" :lean="article.topicLeanValue" text="Topic covers left views" height="18" />
+    </div>
+    <div class="flex w-full gap-2">
+      <ProgressBar :value="article.authorLean" :color="article.authorColor" :lean="article.authorLeanValue" text="Author view's are Right" height="18" />
+    </div>
+  </div>
   <Tabs default-value="summary">
     <TabsList>
       <TabsTrigger value="summary">
@@ -76,6 +76,7 @@
       </TabsTrigger>
     </TabsList>
     <TabsContent value="summary">
+      {{article.content}}
       <ul role="list" class="space-y-8 p-3 text-gray-600 dark:text-gray-200">
         <li class="flex gap-x-3">
           <svg class="mt-1 h-5 w-5 flex-none text-indigo-600 dark:text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -142,3 +143,9 @@
 </div>
 
 </template>
+
+<script setup>
+const props = defineProps({
+  article: Object
+})
+</script>

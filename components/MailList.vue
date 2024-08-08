@@ -21,7 +21,7 @@ function getBadgeVariantFromLabel(label) {
 </script>
 
 <template>
-    <ScrollArea class="h-screen flex">
+    <ScrollArea class="h-screen flex"> 
       <div class="flex-1 flex flex-col gap-2 p-4 pt-0">
         <TransitionGroup name="list" appear>
           <button
@@ -33,6 +33,7 @@ function getBadgeVariantFromLabel(label) {
             )"
             @click="selectedMail = item.id"
           >
+           
             <div class="flex w-full flex-col gap-1">
               <div class="flex items-center">
                 <div class="flex items-center gap-2">

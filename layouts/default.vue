@@ -36,7 +36,7 @@ import {
             </BreadcrumbItem>
           </BreadcrumbList>
   </Breadcrumb>
-  <div class="flex min-h-screen w-full flex-col bg-muted/40 border-t-0">
+  <div class="flex  w-full flex-col bg-muted/40 border-t-0">
     <aside class="fixed inset-y-0 left-0 z-10 hidden w-14 flex-col border-r bg-background sm:flex">
       <nav class="flex flex-col items-center gap-4 px-2 py-4">
         <a
@@ -148,7 +148,7 @@ import {
         </TooltipProvider>
       </nav>
     </aside>
-    <div class="flex flex-col sm:gap-4 sm:py-4 sm:pl-14">
+    <div class="flex flex-col sm:gap-4 sm:py-4 sm:pl-14 ">
       <header class="w-full fixed bottom-0 left-0 z-30 flex h-14 items-center gap-4 border-b bg-background px-4 sm:static sm:h-auto sm:border-0 sm:bg-transparent sm:px-6">
         <Sheet>
           <SheetTrigger as-child>
@@ -215,8 +215,8 @@ import {
         
        
       </header>
-      <Separator class="mb-4" />
-      <main class="mb-16">
+      <Separator class="mb-4 md:hidden" />
+      <main class="mb-16 md:mb-0">
         
         <slot  />
       </main>
