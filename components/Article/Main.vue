@@ -295,23 +295,8 @@ const articles2 = ref([
           
           <div class=" lg:col-span-4 lg:border-l">
             <div class="h-full px-4 py-6 lg:px-8">
-              <Tabs default-value="music" class="h-full space-y-6">
-                <div class="space-between flex items-center">
-                  <TabsList>
-                    <TabsTrigger value="music" class="relative">
-                      News
-                    </TabsTrigger>
-                    <TabsTrigger value="podcasts">
-                      Scams
-                    </TabsTrigger>
-                    <TabsTrigger value="overview" >
-                      Stats
-                    </TabsTrigger>
-                  </TabsList>
-                  
-                </div>
-                <TabsContent
-                  value="music"
+             
+                <div
                   class="border-none p-0 outline-none"
                 >
                   <div class="flex items-center justify-between">
@@ -323,7 +308,7 @@ const articles2 = ref([
                         Top picks for you. Updated daily.
                       </p>
                     </div>
-                    <Button class="mx-auto mt-3  flex">Read More</Button>
+                    <Button class="mx-auto md:mx-0 mt-3  flex">Read More</Button>
                   </div>
                   <Separator class="my-4" />
                   <div class="relative">
@@ -349,7 +334,7 @@ const articles2 = ref([
                         Top picks for you. Updated daily.
                       </p>
                     </div>
-                    <Button class="mx-auto mt-3  flex">Read More</Button>
+                    <Button class="mx-auto md:mx-0 mt-3  flex">Read More</Button>
                   </div>
                   <Separator class="my-4" />
                   <div class="relative">
@@ -361,16 +346,7 @@ const articles2 = ref([
                           style="width: 300px;"
                           
                         />
-                        <!--
-                        <AlbumArtwork
-                          v-for="album in listenNowAlbums"
-                          :key="album.name"
-                          :album="album"
-                          class="w-[250px]"
-                          aspect-ratio="portrait"
-                          :width="250"
-                          :height="330"
-                        />-->
+                       
                       </div>
                       <ScrollBar orientation="horizontal" />
                     </ScrollArea>
@@ -385,7 +361,7 @@ const articles2 = ref([
                         Top picks for you. Updated daily.
                       </p>
                     </div>
-                    <Button class="mx-auto mt-3  flex">Read More</Button>
+                    <Button class="mx-auto md:mx-0 mt-3  flex">Read More</Button>
                   </div>
                   <Separator class="my-4 md:hidden" />
                   <div class="md:hidden">
@@ -414,7 +390,7 @@ const articles2 = ref([
                       </p>
                       
                     </div>
-                    <Button class="mx-auto mt-3  flex">Read More</Button>
+                    <Button class="mx-auto md:mx-0 mt-3  flex">Read More</Button>
                   </div>
                   <Separator class="my-4" />
                   <div class="relative">
@@ -456,248 +432,8 @@ const articles2 = ref([
                       <ScrollBar orientation="horizontal" />
                     </ScrollArea>
                   </div>
-                </TabsContent>
-                <TabsContent
-                  value="podcasts"
-                  class="h-full flex-col border-none p-0 data-[state=active]:flex"
-                >
-                  <div class="flex items-center justify-between">
-                    <div class="space-y-1">
-                      <h2 class="text-2xl font-semibold tracking-tight">
-                        New Episodes
-                      </h2>
-                      <p class="text-sm text-muted-foreground">
-                        Your favorite podcasts. Updated daily.
-                      </p>
-                    </div>
-                  </div>
-                  <Separator class="my-4" />
-                  <PodcastEmptyPlaceholder />
-                  
-                </TabsContent>
-                <TabsContent
-                  value="overview"
-                  class="h-full flex-col border-none p-0 data-[state=active]:flex"
-                >
-                <div class="flex flex-col mb-12">
-      <div class="flex items-center justify-between space-y-2">
-        <h2 class="text-3xl font-bold tracking-tight mb-3">
-          Dashboard
-        </h2>
-       
-      </div>
-      <Tabs default-value="overview" class="space-y-4">
-        <TabsList>
-          <TabsTrigger value="overview">
-            Overview
-          </TabsTrigger>
-          <TabsTrigger value="analytics" disabled>
-            Analytics
-          </TabsTrigger>
-          <TabsTrigger value="reports" disabled>
-            Reports
-          </TabsTrigger>
-          <TabsTrigger value="notifications" disabled>
-            Notifications
-          </TabsTrigger>
-        </TabsList>
-        <TabsContent value="overview" class="space-y-4">
-            <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-7 md:hidden ">
-            <Card class=" ">
-              <CardHeader>
-                <CardTitle>Overview</CardTitle>
-              </CardHeader>
-              <CardContent >
-                
-                <Overview4 />
-              </CardContent>
-            </Card>
-          </div>
-            <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-7 md:hidden">
-            <Card class="col-span-4">
-              <CardHeader>
-                <CardTitle>Overview</CardTitle>
-              </CardHeader>
-              <CardContent class="pl-2">
-                
-                <Overview3 />
-              </CardContent>
-            </Card>
-          </div>
-          <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-7 md:hidden">
-            <Card class="col-span-4">
-              <CardHeader>
-                <CardTitle>Overview</CardTitle>
-              </CardHeader>
-              <CardContent class="pl-2">
-                <Overview />
-                
-              </CardContent>
-            </Card>
-          </div>
-            <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-7 md:hidden">
-            <Card class="col-span-4">
-              <CardHeader>
-                <CardTitle>Overview</CardTitle>
-              </CardHeader>
-              <CardContent class="pl-2">
-     
-                <Overview2 />
-               
-              </CardContent>
-            </Card>
-          </div>
-          <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-            <Card>
-              <CardHeader class="flex flex-row items-center justify-between space-y-0 pb-2">
-                <CardTitle class="text-sm font-medium">
-                  Total Revenue
-                </CardTitle>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  class="h-4 w-4 text-muted-foreground"
-                >
-                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                </svg>
-              </CardHeader>
-              <CardContent>
-                <div class="text-2xl font-bold">
-                  $45,231.89
                 </div>
-                <p class="text-xs text-muted-foreground">
-                  +20.1% from last month
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader class="flex flex-row items-center justify-between space-y-0 pb-2">
-                <CardTitle class="text-sm font-medium">
-                  Subscriptions
-                </CardTitle>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  class="h-4 w-4 text-muted-foreground"
-                >
-                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                  <circle cx="9" cy="7" r="4" />
-                  <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
-                </svg>
-              </CardHeader>
-              <CardContent>
-                <div class="text-2xl font-bold">
-                  +2350
-                </div>
-                <p class="text-xs text-muted-foreground">
-                  +180.1% from last month
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader class="flex flex-row items-center justify-between space-y-0 pb-2">
-                <CardTitle class="text-sm font-medium">
-                  Sales
-                </CardTitle>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  class="h-4 w-4 text-muted-foreground"
-                >
-                  <rect width="20" height="14" x="2" y="5" rx="2" />
-                  <path d="M2 10h20" />
-                </svg>
-              </CardHeader>
-              <CardContent>
-                <div class="text-2xl font-bold">
-                  +12,234
-                </div>
-                <p class="text-xs text-muted-foreground">
-                  +19% from last month
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader class="flex flex-row items-center justify-between space-y-0 pb-2">
-                <CardTitle class="text-sm font-medium">
-                  Active Now
-                </CardTitle>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  class="h-4 w-4 text-muted-foreground"
-                >
-                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                </svg>
-              </CardHeader>
-              <CardContent>
-                <div class="text-2xl font-bold">
-                  +573
-                </div>
-                <p class="text-xs text-muted-foreground">
-                  +201 since last hour
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-          <div class="md:grid gap-4 md:grid-cols-2 lg:grid-cols-7 hidden">
-            <Card class="col-span-4">
-              <CardHeader>
-                <CardTitle>Overview</CardTitle>
-              </CardHeader>
-              <CardContent class="pl-2">
-                
-                <Overview3 />
-              </CardContent>
-            </Card>
-            <Card class="col-span-3">
-              <CardHeader>
-                <CardTitle>Overview</CardTitle>
-              </CardHeader>
-              <CardContent class="pl-2">
-                <Overview />
-                
-              </CardContent>
-              <Card class="col-span-4">
-              <CardHeader>
-                <CardTitle>Overview</CardTitle>
-              </CardHeader>
-              <CardContent class="pl-2">
-     
-                <Overview2 />
-               
-              </CardContent>
-            </Card>
-            </Card>
-          </div>
-          
-            
-        </TabsContent>
-      </Tabs>
-    </div>
-                  
-                </TabsContent>
-              </Tabs>
+      
             </div>
           </div>
         </div>

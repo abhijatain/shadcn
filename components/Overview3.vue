@@ -1,13 +1,17 @@
 <template>
     <div>
-      <h3 class=" my-3">Political Leanings of Indian Newspapers and Channels</h3>
+      
       <VisBulletLegend :items="chartLabels.map(d => ({ name: d.legend }))" class=" my-3" :color="color"/>
       <VisXYContainer :height="isSmallScreen ? 600 : 800" :yDirection="Direction.South" >
         <VisStackedBar :data="data" :x="x" :y="y" :color="color" :orientation="Orientation.Horizontal" />
         <VisTooltip :triggers="{ [StackedBar.selectors.bar]: tooltipTemplate }" />
+        
+        <!--
         <VisAxis type="x" label="Coverage of each channel" />
-        <VisAxis type="y" :tickTextWidth="isSmallScreen ? 75 : null" 
-          :label="isSmallScreen ? null : 'Media Outlet'" :numTicks="data.length" :tickFormat="tickFormat" :style="{ 'grid': { 'stroke': 'none' } }"/>
+                <VisAxis type="y" :tickTextWidth="isSmallScreen ? 75 : null"  
+          :label="isSmallScreen ? null : 'Media Outlet'" :numTicks="data.length" :tickFormat="tickFormat" />
+        -->
+
       </VisXYContainer>
     </div>
   </template>

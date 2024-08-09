@@ -1,5 +1,5 @@
 <template>
-<div class="antialiased text-gray-900 " style="width: 300;height: 400;">
+<div class="antialiased  " style="width: 300;height: 400;">
   <div class=" flex items-center justify-center">
     <div class=" rounded-lg overflow-hidden ">
       <!--E11-->

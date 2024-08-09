@@ -8,13 +8,15 @@
             <div>
               <div class="flex items-baseline p-2">
                 <span class="inline-block  py-1 px-4 text-xs rounded-full uppercase font-semibold tracking-wide">New</span>
-                <div class="ml-2 text-xs uppercase font-semibold tracking-wide">
+                <div class="ml-2 text-xs uppercase font-semibold tracking-wide text-white">
                   The Hindu 
                 </div>
               </div>
             </div>
             <div>
-              <p class="mt-2 font-semibold text-lg text-wrap">Rahul Gandhi Criticizes Modi’s Recent Financial Reforms</p>
+              <p class="p-1 font-semibold text-lg text-wrap text-white  rounded-lg ">
+  Rahul Gandhi Criticizes Modi’s Recent Financial Reforms
+</p>
               <div class="flex gap-3 flex-col">
                 <div class="flex gap-2 p-2 flex-col mb-6">
                   <ProgressBar :value="85" color="#E8630A" lean="Right" text="Content right  85% " height="16"/>

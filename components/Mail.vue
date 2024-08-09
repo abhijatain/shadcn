@@ -14,12 +14,12 @@ const selectedArticleData = computed(() => props.articles.find(item => item.id =
 </script>
 
 <template>
-<TooltipProvider :delay-duration="0">
+
   <div class="flex h-full max-h-[800px]">
     
     <!-- Left Column -->
     <div class="w-1/2 flex-shrink-0">
-      <div class="bg-background/95 p-4 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div class=" p-4">
         <form>
           <div class="relative">
             <Input v-model="searchValue" placeholder="Search" class="pl-8" />
@@ -37,7 +37,7 @@ const selectedArticleData = computed(() => props.articles.find(item => item.id =
     </div>
     
   </div>
-</TooltipProvider>
+
 
 </template>
   
