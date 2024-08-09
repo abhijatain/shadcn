@@ -27,7 +27,7 @@ Users2,
       <h1 class="font-bold text-center text-4xl p-4 font-mono">
     NOSIDES
   </h1>
-  <Breadcrumb class="flex flex-row ">
+  <Breadcrumb class="flex flex-row hidden">
           <BreadcrumbList>
             <BreadcrumbItem>
               <BreadcrumbLink as-child>
