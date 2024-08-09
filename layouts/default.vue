@@ -23,7 +23,7 @@ Users2,
       <SidebarLeft />
     </div>
     
-    <div class="md:w-[75%] flex flex-col sm:gap-4 sm:py-4 sm:pl-14 ">
+    <div class="md:w-[70%] flex flex-col sm:gap-4 sm:py-4 sm:pl-14 ">
       <h1 class="font-bold text-center text-4xl p-4 font-mono">
     NOSIDES
   </h1>
@@ -113,7 +113,7 @@ Users2,
         <slot  />
       </main>
     </div>
-    <div class="h-full w-[25%] hidden md:block">
+    <div class="h-full md:w-[15%] lg:w-[30%] hidden md:block">
       <SidebarRight />
     </div>
     
