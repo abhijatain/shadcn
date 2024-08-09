@@ -18,7 +18,7 @@ import DarkMode from '~/components/DarkMode.vue';
   <div class=" flex flex-row justify-between p-2 items-center max-w-[1900px] mx-auto">
     <div class="flex flex-row gap-4 items-center font-semibold">
       <Avatar>
-        <AvatarImage src="https://www.svgrepo.com/show/2640/circle.svg" alt="@radix-vue" />
+        <AvatarImage src="https://cdn.pixabay.com/photo/2016/08/25/07/30/red-1618916_640.png" alt="@radix-vue" />
         <AvatarFallback>CN</AvatarFallback>
       </Avatar>
       <h1 class="font-bold text-center text-3xl p-4 font-mono">
@@ -26,13 +26,16 @@ import DarkMode from '~/components/DarkMode.vue';
       </h1>
    
    
-      <a>Home</a>
-      <a>For You</a>
-      <a>Local</a>
-      <a>Stats</a>
+      <a class="hidden md:block">Home</a>
+      <a class="hidden md:block">For You</a>
+      <a class="hidden md:block">Local</a>
+      <a class="hidden md:block">Stats</a>
     </div>
-   
-  <div class="flex flex-row gap-4">
+    <div class="md:hidden ">
+      <DarkMode />
+    </div>
+  
+  <div class="md:flex flex-row gap-4 hidden">
     <DarkMode />
     <div class="relative w-full max-w-sm items-center">
     <Input id="search" type="text" placeholder="Search..." class="pl-10" />
