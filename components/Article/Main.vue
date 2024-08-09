@@ -1,5 +1,7 @@
 <script setup >
 
+
+
 const articles = ref([
   
 
@@ -277,21 +279,93 @@ const articles2 = ref([
 </script>
 
 <template>
+  <div class="hidden md:block">
+    <CarouselTop />
+  </div>
   
-
-  <div class="">
+   <div class="">
  
-    <div class="">
-      <div class="bg-background">
-        <div class="">
+ <div class="">
+   <div class="bg-background">
+     <div class="">
+       
+       <div class=" lg:col-span-4 lg:border-l">
+         <div class="h-full px-4 py-6 lg:px-8">
           
-          <div class=" lg:col-span-4 lg:border-l">
-            <div class="h-full px-4 py-6 lg:px-8">
-             
-                <div
-                  class="border-none p-0 outline-none"
-                >
-                  <div class="flex items-center justify-between">
+             <div
+               class="border-none p-0 outline-none"
+             >
+               <div class="flex items-center justify-between">
+                 <div class="space-y-1">
+                   <h2 class="text-2xl font-semibold tracking-tight">
+                     Latest News
+                   </h2>
+                   <p class="text-sm text-muted-foreground">
+                     Top picks for you. Updated daily.
+                   </p>
+                 </div>
+                 <Button class="mx-auto md:mx-0 mt-3  flex">Read More</Button>
+               </div>
+               <Separator class="my-4" />
+               <div class="relative">
+                 <ScrollArea class=" w-96 md:w-full whitespace-nowrap">
+                   <div class="flex space-x-4 pb-4">
+                     <ArticleCard3 
+                       v-for="(item, index) in items" :key="index" :items="item"
+                    
+                      
+                       
+                     />
+                   </div>
+                   <ScrollBar orientation="horizontal" />
+                 </ScrollArea>
+               </div>
+               <Separator class="my-4" />
+
+               <Separator class="my-4" />
+               <div class="flex items-center justify-between">
+                 <div class="space-y-1">
+                   <h2 class="text-2xl font-semibold tracking-tight">
+                     Is Budget for Middle Class
+                   </h2>
+                   <p class="text-sm text-muted-foreground">
+                     Top picks for you. Updated daily.
+                   </p>
+                 </div>
+                 <Button class="mx-auto md:mx-0 mt-3  flex">Read More</Button>
+               </div>
+               <Separator class="my-4" />
+               <div class="relative">
+                 <ScrollArea class=" w-96 md:w-full whitespace-nowrap">
+                   <div class="flex space-x-2 pb-4">
+                     <ArticleCard 
+                       v-for="(article, index) in articles" :key="index" :article="article"
+                      
+                       style="width: 300px;"
+                       
+                     />
+                    
+                   </div>
+                   <ScrollBar orientation="horizontal" />
+                 </ScrollArea>
+               </div>
+              
+               
+               
+               <Separator class="my-4" />
+               
+             </div>
+   
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+  <div class="ms-2">
+
+  
+  <div class="flex items-center justify-between mt-6 p-2 ">
                     <div class="space-y-1">
                       <h2 class="text-2xl font-semibold tracking-tight">
                         Latest News
@@ -302,117 +376,10 @@ const articles2 = ref([
                     </div>
                     <Button class="mx-auto md:mx-0 mt-3  flex">Read More</Button>
                   </div>
-                  <Separator class="my-4" />
-                  <div class="relative">
-                    <ScrollArea class=" w-96 md:w-full whitespace-nowrap">
-                      <div class="flex space-x-4 pb-4">
-                        <ArticleCard3 
-                          v-for="(item, index) in items" :key="index" :items="item"
-                       
-                          :width="300"
-                          
-                        />
-                      </div>
-                      <ScrollBar orientation="horizontal" />
-                    </ScrollArea>
-                  </div>
-                  <Separator class="my-4" />
-                  <div class="flex items-center justify-between">
-                    <div class="space-y-1">
-                      <h2 class="text-2xl font-semibold tracking-tight">
-                        Is Budget for Middle Class
-                      </h2>
-                      <p class="text-sm text-muted-foreground">
-                        Top picks for you. Updated daily.
-                      </p>
-                    </div>
-                    <Button class="mx-auto md:mx-0 mt-3  flex">Read More</Button>
-                  </div>
-                  <Separator class="my-4" />
-                  <div class="relative">
-                    <ScrollArea class=" w-96 md:w-full whitespace-nowrap">
-                      <div class="flex space-x-2 pb-4">
-                        <ArticleCard 
-                          v-for="(article, index) in articles" :key="index" :article="article"
-                         
-                          style="width: 300px;"
-                          
-                        />
-                       
-                      </div>
-                      <ScrollBar orientation="horizontal" />
-                    </ScrollArea>
-                  </div>
-                  <Separator class="my-4" />
-                  <div class="flex items-center justify-between md:hidden">
-                    <div class="space-y-1">
-                      <h2 class="text-2xl font-semibold tracking-tight">
-                        Factual & Unbiased News
-                      </h2>
-                      <p class="text-sm text-muted-foreground">
-                        Top picks for you. Updated daily.
-                      </p>
-                    </div>
-                    <Button class="mx-auto md:mx-0 mt-3  flex">Read More</Button>
-                  </div>
-                  <Separator class="my-4 md:hidden" />
-                  <div class="md:hidden">
-                    
-                      <div class="flex flex-col justify-center">
-                        <ArticleCard4
-                        v-for="(article, index) in articles2" :key="index" :article="article"
-                          class=""
-                          aspect-ratio="portrait"
-                          :width="550"
-                          
-                        />
-                      </div>
-                     
-                    
-                  </div>
-                  
-                  <Separator class="my-4" />
-                  <div class="flex items-center justify-between">
-                    <div class="space-y-1">
-                      <h2 class="text-2xl font-semibold tracking-tight">
-                        Top News
-                      </h2>
-                      <p class="text-sm text-muted-foreground">
-                        Top picks for you. Updated daily.
-                      </p>
-                      
-                    </div>
-                    <Button class="mx-auto md:mx-0 mt-3  flex">Read More</Button>
-                  </div>
-                  <Separator class="my-4" />
-                  <div class="relative">
-                    <ScrollArea class=" w-96 md:w-full whitespace-nowrap">
-                      <div class="flex space-x-4 pb-4">
-                        <ArticleCard2 
-                          v-for="(item, index) in items" :key="index" :items="item"
-                          class=" shadow-lg dark:shadow-blue-800/50 shadow-blue-500/50"
-                          aspect-ratio="portrait"
-                          :width="550"
-                          style="width: 300px; height: 300px;"
-                        />
-                      </div>
-                      <ScrollBar orientation="horizontal" />
-                    </ScrollArea>
-                  </div>
-                  <Separator class="my-4" />
-                  <div class="mt-6 space-y-1">
-                    <h2 class="text-2xl font-semibold tracking-tight">
-                      Made for You
-                    </h2>
-                    <p class="text-sm text-muted-foreground">
-                      Your personal playlists. Updated daily.
-                    </p>
-
-                  </div>
                   
                   <Separator class="my-4" />
                   <div class="relative">
-                    <ScrollArea class=" w-96 md:w-full whitespace-nowrap">
+                    <ScrollArea class=" w-96 md:w-full whitespace-nowrap ">
                       <div class="flex space-x-4 pb-4">
                         <ArticleCard 
                           v-for="(article, index) in articles" :key="index" :article="article"
@@ -425,12 +392,34 @@ const articles2 = ref([
                     </ScrollArea>
                   </div>
                 </div>
-      
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
+                <Separator class="my-4" />
+                  <div class="flex items-center justify-between p-2">
+                    <div class="space-y-1">
+                      <h2 class="text-2xl font-semibold tracking-tight">
+                        Factual & Unbiased News
+                      </h2>
+                      <p class="text-sm text-muted-foreground">
+                        Top picks for you. Updated daily.
+                      </p>
+                    </div>
+                    <Button class="mx-auto md:mx-0 mt-3  flex">Read More</Button>
+                  </div>
+                  <Separator class="my-4 " />
+                  <div class="">
+                    
+                      <div class="flex flex-col justify-center ">
+                        <ArticleCard4
+                        v-for="(article, index) in articles2" :key="index" :article="article"
+                          class=""
+                          aspect-ratio="portrait"
+                          :width="550"
+                          
+                        />
+                      </div>
+                     
+                    
+                  </div>
+ 
 </template>
 

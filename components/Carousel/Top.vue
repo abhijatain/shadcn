@@ -22,7 +22,7 @@ const items = [
 
 <template>
   <Carousel
-    class="relative"
+    class="relative md:w-[80%] mx-auto "
     :plugins="[plugin]"
     @mouseenter="plugin.stop"
     @mouseleave="[plugin.reset(), plugin.play(), console.log('Running')];"

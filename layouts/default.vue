@@ -196,5 +196,5 @@ import DarkMode from '~/components/DarkMode.vue';
     </div>
     
   </div>
-  <Footer />
+
 </template>

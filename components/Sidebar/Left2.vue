@@ -1,5 +1,6 @@
 <template>
     <div class="flex flex-col gap-6 mt-4">
+        
         <Card class="border-0">
             <CardHeader>
                 <CardTitle>Top Topics</CardTitle>
@@ -94,6 +95,13 @@
                 </ul>
             </CardContent>
         </Card>
+        
+        <div class="p-3">
+            <h2 class="text-2xl font-semibold tracking-tight">
+                     You May Like
+                   </h2>
+            <ArticleAccordian />
+        </div>
         <Card class="border-0">
     <CardHeader>
       <CardTitle>Create project</CardTitle>
