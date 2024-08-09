@@ -17,14 +17,7 @@ Users2,
 </script>
 
 <template>
-   
-  <div class="flex  flex-row  border-t-0">
-    <div class="h-full">
-      <SidebarLeft />
-    </div>
-    
-    <div class="md:w-[70%] flex flex-col sm:gap-4 sm:py-4 sm:pl-14 ">
-      <h1 class="font-bold text-center text-4xl p-4 font-mono">
+    <h1 class="font-bold text-center text-4xl p-4 font-mono">
     NOSIDES
   </h1>
   <Breadcrumb class="flex flex-row hidden">
@@ -41,6 +34,11 @@ Users2,
             </BreadcrumbItem>
           </BreadcrumbList>
   </Breadcrumb>
+  
+  <div class="flex  flex-row  border-t-0 max-w-[1900px] mx-auto px-4">
+  
+    <div class="md:w-[75%] flex flex-col  ">
+     
       <header class="w-full fixed bottom-0 left-0 z-30 flex h-14 items-center gap-4 border-b bg-background px-4 sm:static sm:h-auto sm:border-0 sm:bg-transparent sm:px-6">
         <Sheet>
           <SheetTrigger as-child>
@@ -112,10 +110,13 @@ Users2,
         
         <slot  />
       </main>
+
+      
     </div>
-    <div class="h-full md:w-[15%] lg:w-[30%] hidden md:block">
+    <div class="h-full md:w-[25%]  hidden md:block">
       <SidebarRight />
     </div>
     
   </div>
+  <Footer />
 </template>

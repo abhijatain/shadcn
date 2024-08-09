@@ -1,213 +1,12 @@
-<script setup >
+<script setup lang="ts">
+import Autoplay from 'embla-carousel-autoplay'
 
-const articles = ref([
-  
 
-  {
-    title: "Modi's Economic Policies and Their Impact on Public Sector Banks",
-    source: 'The Hindu',
-    date: 'May 12, 2024',
-    topicLean: 80,
-    authorLean: 65,
-    topicLeanText: 'Topic covers left views',
-    authorLeanText: "Author views are center",
-    topicLeanReason: 'The article explores economic policies and their implications, with a critical view on how they affect public sector banks.',
-    authorLeanReason: 'The article provides a balanced view but includes critical insights into government policies.',
-    replies: 310,
-    views: '320K',
-    topicColor: '#035397', // Left
-    authorColor: '#399918', // Light Green (Center)
-    topicLeanValue: 'left',
-    authorLeanValue: 'center'
-  },
-  {
-    title: "Rahul Gandhi Criticizes Modi’s Recent Financial Reforms",
-    source: 'The Times of India',
-    date: 'May 13, 2024',
-    topicLean: 70,
-    authorLean: 60,
-    topicLeanText: 'Topic covers left views',
-    authorLeanText: "Author views are left",
-    topicLeanReason: 'The article reports on Rahul Gandhi’s criticism of recent financial reforms, reflecting a left-leaning perspective.',
-    authorLeanReason: 'The article’s author is known for a left-leaning stance on economic policies.',
-    replies: 150,
-    views: '200K',
-    topicColor: '#035397', // Left
-    authorColor: '#035397', // Left
-    topicLeanValue: 'left',
-    authorLeanValue: 'left'
-  },
-  {
-    title: "Impact of Modi’s Economic Policies on the Banking Sector",
-    source: 'The Economic Times',
-    date: 'May 14, 2024',
-    topicLean: 60,
-    authorLean: 75,
-    topicLeanText: 'Topic covers center views',
-    authorLeanText: "Author views are center",
-    topicLeanReason: 'The article provides an analysis of Modi’s policies from a neutral perspective, focusing on their impact on the banking sector.',
-    authorLeanReason: 'The author maintains a neutral stance while analyzing economic policies.',
-    replies: 220,
-    views: '275K',
-    topicColor: '#399918', // Light Green (Center)
-    authorColor: '#399918', // Light Green (Center)
-    topicLeanValue: 'center',
-    authorLeanValue: 'center'
-  },
-  {
-    title: "BJP's Economic Strategy: A Critical Review",
-    source: 'The Indian Express',
-    date: 'May 15, 2024',
-    topicLean: 75,
-    authorLean: 90,
-    topicLeanText: 'Topic covers left views',
-    authorLeanText: "Author views are center",
-    topicLeanReason: 'The article critically reviews the BJP’s economic strategy, suggesting left-leaning implications.',
-    authorLeanReason: 'The author’s views are more centered but offer a critical perspective.',
-    replies: 180,
-    views: '250K',
-    topicColor: '#035397', // Left
-    authorColor: '#399918', // Light Green (Center)
-    topicLeanValue: 'left',
-    authorLeanValue: 'center'
-  },
-  {
-    title: "Public Sector Banks and Modi’s Financial Policies: An Overview",
-    source: 'Hindustan Times',
-    date: 'May 16, 2024',
-    topicLean: 85,
-    authorLean: 90,
-    topicLeanText: 'Topic covers center-left views',
-    authorLeanText: "Author views are center",
-    topicLeanReason: 'The article discusses the financial policies with a focus on public sector banks, adopting a center-left approach.',
-    authorLeanReason: 'The author’s views are more centered but provide a critical analysis of financial policies.',
-    replies: 195,
-    views: '260K',
-    topicColor: '#399918', // Light Green (Center)
-    authorColor: '#399918', // Light Green (Center)
-    topicLeanValue: 'center-left',
-    authorLeanValue: 'center'
-  },
-  {
-    title: "The Role of Public Sector Banks in Modi’s Economic Vision",
-    source: 'Business Standard',
-    date: 'May 17, 2024',
-    topicLean: 65,
-    authorLean: 70,
-    topicLeanText: 'Topic covers center views',
-    authorLeanText: "Author views are right",
-    topicLeanReason: 'The article evaluates the role of public sector banks in the context of Modi’s economic vision, with a center perspective.',
-    authorLeanReason: 'The author’s views lean towards the right, providing a supportive analysis.',
-    replies: 140,
-    views: '210K',
-    topicColor: '#399918', // Light Green (Center)
-    authorColor: '#E8630A', // Right
-    topicLeanValue: 'center',
-    authorLeanValue: 'right'
-  },
-  {
-    title: "Analyzing the Effectiveness of Modi’s Economic Policies",
-    source: 'Financial Express',
-    date: 'May 18, 2024',
-    topicLean: 85,
-    authorLean: 60,
-    topicLeanText: 'Topic covers right views',
-    authorLeanText: "Author views are center",
-    topicLeanReason: 'The article offers a detailed analysis of Modi’s economic policies, reflecting right-leaning views on their effectiveness.',
-    authorLeanReason: 'The author provides a center view while discussing the effectiveness of the policies.',
-    replies: 250,
-    views: '290K',
-    topicColor: '#E8630A', // Right
-    authorColor: '#399918', // Light Green (Center)
-    topicLeanValue: 'right',
-    authorLeanValue: 'center'
-  },
-  {
-    title: "Modi’s Financial Reforms and Their Impact on the Economy",
-    source: 'The Guardian',
-    date: 'May 19, 2024',
-    topicLean: 70,
-    authorLean: 85,
-    topicLeanText: 'Topic covers left views',
-    authorLeanText: "Author views are center",
-    topicLeanReason: 'The article reviews Modi’s financial reforms, highlighting their impact on the economy with a left-leaning perspective.',
-    authorLeanReason: 'The author maintains a neutral stance but provides a critical perspective on the financial reforms.',
-    replies: 230,
-    views: '280K',
-    topicColor: '#035397', // Left
-    authorColor: '#399918', // Light Green (Center)
-    topicLeanValue: 'left',
-    authorLeanValue: 'center'
-  },
-  {
-    title: "Rahul Gandhi’s View on Modi’s Economic Reforms",
-    source: 'The New Indian Express',
-    date: 'May 20, 2024',
-    topicLean: 75,
-    authorLean: 90,
-    topicLeanText: 'Topic covers left views',
-    authorLeanText: "Author views are center",
-    topicLeanReason: 'The article covers Rahul Gandhi’s perspective on Modi’s economic reforms, reflecting left-leaning views.',
-    authorLeanReason: 'The author provides a balanced view but highlights criticisms of the reforms.',
-    replies: 160,
-    views: '225K',
-    topicColor: '#035397', // Left
-    authorColor: '#399918', // Light Green (Center)
-    topicLeanValue: 'left',
-    authorLeanValue: 'center'
-  },
-  {
-    title: "Economic Policies Under Modi: A Comprehensive Review",
-    source: 'Livemint',
-    date: 'May 21, 2024',
-    topicLean: 60,
-    authorLean: 75,
-    topicLeanText: 'Topic covers center views',
-    authorLeanText: "Author views are center",
-    topicLeanReason: 'The article offers a comprehensive review of economic policies under Modi, with a center-leaning perspective.',
-    authorLeanReason: 'The author presents a balanced view with a focus on the effectiveness of the policies.',
-    replies: 210,
-    views: '270K',
-    topicColor: '#399918', // Light Green (Center)
-    authorColor: '#399918', // Light Green (Center)
-    topicLeanValue: 'center',
-    authorLeanValue: 'center'
-  },
-  {
-    title: "The Impact of Financial Reforms on Public Sector Banks",
-    source: 'Deccan Herald',
-    date: 'May 22, 2024',
-    topicLean: 65,
-    authorLean: 90,
-    topicLeanText: 'Topic covers center-left views',
-    authorLeanText: "Author views are center",
-    topicLeanReason: 'The article discusses the impact of financial reforms on public sector banks, reflecting a center-left view.',
-    authorLeanReason: 'The author provides a balanced perspective with a critical analysis of the reforms.',
-    replies: 190,
-    views: '265K',
-    topicColor: '#399918', // Light Green (Center)
-    authorColor: '#399918', // Light Green (Center)
-    topicLeanValue: 'center-left',
-    authorLeanValue: 'center'
-  },
-  {
-    title: "Public Sector Banks and Economic Reforms: A Balanced Analysis",
-    source: 'The Tribune',
-    date: 'May 23, 2024',
-    topicLean: 70,
-    authorLean: 85,
-    topicLeanText: 'Topic covers left views',
-    authorLeanText: "Author views are center",
-    topicLeanReason: 'The article provides a balanced analysis of public sector banks and economic reforms with left-leaning insights.',
-    authorLeanReason: 'The author maintains a neutral stance but provides a critical perspective on the economic reforms.',
-    replies: 200,
-    views: '275K',
-    topicColor: '#035397', // Left
-    authorColor: '#399918', // Light Green (Center)
-    topicLeanValue: 'left',
-    authorLeanValue: 'center'
-  },
-]);
+const plugin = Autoplay({
+  delay: 3000,
+  stopOnMouseEnter: true,
+  stopOnInteraction: false,
+})
 
 const items = [
   'data:image/jpeg;base64,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',
@@ -219,218 +18,45 @@ const items = [
   'https://cdn.pixabay.com/photo/2024/02/27/00/13/heliconia-8599119_1280.jpg',
   'https://cdn.pixabay.com/photo/2024/06/21/08/21/hut-8843868_1280.jpg',
 ];
-
-const articles2 = ref([
-  
-  {
-    title: "Modi’s Financial Reforms and Their Impact on the Economy",
-    source: 'The Guardian',
-    date: 'May 19, 2024',
-    topicLean: 70,
-    authorLean: 85,
-    topicLeanText: 'Topic covers left views',
-    authorLeanText: "Author views are center",
-    topicLeanReason: 'The article reviews Modi’s financial reforms, highlighting their impact on the economy with a left-leaning perspective.',
-    authorLeanReason: 'The author maintains a neutral stance but provides a critical perspective on the financial reforms.',
-    replies: 230,
-    views: '280K',
-    topicColor: '#035397', // Left
-    authorColor: '#399918', // Light Green (Center)
-    topicLeanValue: 'left',
-    authorLeanValue: 'center'
-  },
-  {
-    title: "Rahul Gandhi’s View on Modi’s Economic Reforms",
-    source: 'The New Indian Express',
-    date: 'May 20, 2024',
-    topicLean: 75,
-    authorLean: 90,
-    topicLeanText: 'Topic covers left views',
-    authorLeanText: "Author views are center",
-    topicLeanReason: 'The article covers Rahul Gandhi’s perspective on Modi’s economic reforms, reflecting left-leaning views.',
-    authorLeanReason: 'The author provides a balanced view but highlights criticisms of the reforms.',
-    replies: 160,
-    views: '225K',
-    topicColor: '#035397', // Left
-    authorColor: '#399918', // Light Green (Center)
-    topicLeanValue: 'left',
-    authorLeanValue: 'center'
-  },
-  {
-    title: "Economic Policies Under Modi: A Comprehensive Review",
-    source: 'Livemint',
-    date: 'May 21, 2024',
-    topicLean: 60,
-    authorLean: 75,
-    topicLeanText: 'Topic covers center views',
-    authorLeanText: "Author views are center",
-    topicLeanReason: 'The article offers a comprehensive review of economic policies under Modi, with a center-leaning perspective.',
-    authorLeanReason: 'The author presents a balanced view with a focus on the effectiveness of the policies.',
-    replies: 210,
-    views: '270K',
-    topicColor: '#399918', // Light Green (Center)
-    authorColor: '#399918', // Light Green (Center)
-    topicLeanValue: 'center',
-    authorLeanValue: 'center'
-  },
-]);
 </script>
 
 <template>
-  
+  <Carousel
+    class="relative"
+    :plugins="[plugin]"
+    @mouseenter="plugin.stop"
+    @mouseleave="[plugin.reset(), plugin.play(), console.log('Running')];"
+    
+  >
+    <CarouselContent>
+      <CarouselItem v-for="(item, index) in items" :key="index">
+        
+            <div class="flex  justify-center">
+                
 
-  <div class="">
- 
-    <div class="">
-      <div class="bg-background">
-        <div class="">
-          
-          <div class=" lg:col-span-4 lg:border-l">
-            <div class="h-full px-4 py-6 lg:px-8">
-             
-                <div
-                  class="border-none p-0 outline-none"
-                >
-                  <div class="flex items-center justify-between">
-                    <div class="space-y-1">
-                      <h2 class="text-2xl font-semibold tracking-tight">
-                        Latest News
-                      </h2>
-                      <p class="text-sm text-muted-foreground">
-                        Top picks for you. Updated daily.
-                      </p>
-                    </div>
-                    <Button class="mx-auto md:mx-0 mt-3  flex">Read More</Button>
-                  </div>
-                  <Separator class="my-4" />
-                  <div class="relative">
-                    <ScrollArea class=" w-96 md:w-full whitespace-nowrap">
-                      <div class="flex space-x-4 pb-4">
-                        <ArticleCard3 
-                          v-for="(item, index) in items" :key="index" :items="item"
-                       
-                          :width="300"
-                          
-                        />
-                      </div>
-                      <ScrollBar orientation="horizontal" />
-                    </ScrollArea>
-                  </div>
-                  <Separator class="my-4" />
-                  <div class="flex items-center justify-between">
-                    <div class="space-y-1">
-                      <h2 class="text-2xl font-semibold tracking-tight">
-                        Is Budget for Middle Class
-                      </h2>
-                      <p class="text-sm text-muted-foreground">
-                        Top picks for you. Updated daily.
-                      </p>
-                    </div>
-                    <Button class="mx-auto md:mx-0 mt-3  flex">Read More</Button>
-                  </div>
-                  <Separator class="my-4" />
-                  <div class="relative">
-                    <ScrollArea class=" w-96 md:w-full whitespace-nowrap">
-                      <div class="flex space-x-2 pb-4">
-                        <ArticleCard 
-                          v-for="(article, index) in articles" :key="index" :article="article"
-                         
-                          style="width: 300px;"
-                          
-                        />
-                       
-                      </div>
-                      <ScrollBar orientation="horizontal" />
-                    </ScrollArea>
-                  </div>
-                  <Separator class="my-4" />
-                  <div class="flex items-center justify-between md:hidden">
-                    <div class="space-y-1">
-                      <h2 class="text-2xl font-semibold tracking-tight">
-                        Factual & Unbiased News
-                      </h2>
-                      <p class="text-sm text-muted-foreground">
-                        Top picks for you. Updated daily.
-                      </p>
-                    </div>
-                    <Button class="mx-auto md:mx-0 mt-3  flex">Read More</Button>
-                  </div>
-                  <Separator class="my-4 md:hidden" />
-                  <div class="md:hidden">
-                    
-                      <div class="flex flex-col justify-center">
-                        <ArticleCard4
-                        v-for="(article, index) in articles2" :key="index" :article="article"
-                          class=""
-                          aspect-ratio="portrait"
-                          :width="550"
-                          
-                        />
-                      </div>
-                     
-                    
-                  </div>
-                  
-                  <Separator class="my-4" />
-                  <div class="flex items-center justify-between">
-                    <div class="space-y-1">
-                      <h2 class="text-2xl font-semibold tracking-tight">
-                        Top News
-                      </h2>
-                      <p class="text-sm text-muted-foreground">
-                        Top picks for you. Updated daily.
-                      </p>
-                      
-                    </div>
-                    <Button class="mx-auto md:mx-0 mt-3  flex">Read More</Button>
-                  </div>
-                  <Separator class="my-4" />
-                  <div class="relative">
-                    <ScrollArea class=" w-96 md:w-full whitespace-nowrap">
-                      <div class="flex space-x-4 pb-4">
-                        <ArticleCard2 
-                          v-for="(item, index) in items" :key="index" :items="item"
-                          class=" shadow-lg dark:shadow-blue-800/50 shadow-blue-500/50"
-                          aspect-ratio="portrait"
-                          :width="550"
-                          style="width: 300px; height: 300px;"
-                        />
-                      </div>
-                      <ScrollBar orientation="horizontal" />
-                    </ScrollArea>
-                  </div>
-                  <Separator class="my-4" />
-                  <div class="mt-6 space-y-1">
-                    <h2 class="text-2xl font-semibold tracking-tight">
-                      Made for You
-                    </h2>
-                    <p class="text-sm text-muted-foreground">
-                      Your personal playlists. Updated daily.
-                    </p>
-
-                  </div>
-                  
-                  <Separator class="my-4" />
-                  <div class="relative">
-                    <ScrollArea class=" w-96 md:w-full whitespace-nowrap">
-                      <div class="flex space-x-4 pb-4">
-                        <ArticleCard 
-                          v-for="(article, index) in articles" :key="index" :article="article"
-                          class=" shadow-lg dark:shadow-blue-800/50 shadow-blue-500/50"
-                          aspect-ratio="portrait"
-                          
-                        />
-                      </div>
-                      <ScrollBar orientation="horizontal" />
-                    </ScrollArea>
-                  </div>
-                </div>
-      
-            </div>
-          </div>
+<section class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">We invest in the world’s potential</h1>
+        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+            <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                Get started
+                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </a>
+            <a href="#" class="py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-70">
+                Learn more
+            </a>  
         </div>
-      </div>
     </div>
-  </div>
-</template>
+</section>
 
+            </div>
+          
+      </CarouselItem>
+    </CarouselContent>
+    <CarouselPrevious />
+    <CarouselNext />
+  </Carousel>
+</template>

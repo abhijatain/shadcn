@@ -12,10 +12,12 @@
   "dependencies": {
     "@unovis/ts": "^1.4.3",
     "@unovis/vue": "^1.4.3",
-    "@vueuse/core": "^10.11.0",
+    "@vueuse/core": "^10.11.1",
     "@vueuse/nuxt": "^10.11.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "embla-carousel-autoplay": "^8.1.8",
+    "embla-carousel-vue": "^8.1.8",
     "lucide-vue-next": "^0.417.0",
     "nuxt": "^3.12.4",
     "radix-vue": "^1.9.2",

@@ -1,6 +1,6 @@
 <template>
 
-<div class="antialiased  relative" style="width: 300px; height: 300px;">
+<div class="antialiased  relative" >
       <div class="flex items-center justify-center">
         <div class=" rounded-lg overflow-hidden  relative">
           <img class="h-[300px] object-cover object-end" :src="items" width="300" alt="Image" />
