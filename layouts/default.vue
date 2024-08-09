@@ -7,19 +7,91 @@ PanelLeft,
 
 Package,
 Package2,
-
-
-
-Settings,
+Search,
 ShoppingCart,
 Users2,
 } from 'lucide-vue-next'
+import DarkMode from '~/components/DarkMode.vue';
 </script>
 
 <template>
-    <h1 class="font-bold text-center text-4xl p-4 font-mono">
-    NOSIDES
-  </h1>
+  <div class=" flex flex-row justify-between p-2 items-center max-w-[1900px] mx-auto">
+    <div class="flex flex-row gap-4 items-center font-semibold">
+      <Avatar>
+        <AvatarImage src="https://www.svgrepo.com/show/2640/circle.svg" alt="@radix-vue" />
+        <AvatarFallback>CN</AvatarFallback>
+      </Avatar>
+      <h1 class="font-bold text-center text-3xl p-4 font-mono">
+        NOSIDES
+      </h1>
+   
+   
+      <a>Home</a>
+      <a>For You</a>
+      <a>Local</a>
+      <a>Stats</a>
+    </div>
+   
+  <div class="flex flex-row gap-4">
+    <DarkMode />
+    <div class="relative w-full max-w-sm items-center">
+    <Input id="search" type="text" placeholder="Search..." class="pl-10" />
+    <span class="absolute start-0 inset-y-0 flex items-center justify-center px-2">
+      <Search class="size-6 text-muted-foreground" />
+    </span>
+  </div>
+    <Button>Subscribe</Button>
+    <Button variant="outline">Login</Button>
+  </div>
+  </div>
+   <Separator />
+   <ScrollArea >
+   <div class=" flex flex-row p-2 mx-8 gap-4 justify-center">
+      <Badge variant="secondary">
+      Secondary+
+    </Badge>
+    <Badge variant="secondary">
+      Secondary+
+    </Badge>
+    <Badge variant="secondary">
+      Secondary+
+    </Badge>
+    <Badge variant="secondary">
+      Secondary+
+    </Badge>
+    <Badge variant="secondary">
+      Secondary+
+    </Badge>
+    <Badge variant="secondary">
+      Secondary+
+    </Badge>
+    <Badge variant="secondary">
+      Secondary+
+    </Badge>
+    <Badge variant="secondary">
+      Secondary+
+    </Badge>
+    <Badge variant="secondary">
+      Secondary+
+    </Badge>
+    
+    <Badge variant="secondary">
+      Secondary+
+    </Badge>
+    <Badge variant="secondary">
+      Secondary+
+    </Badge>
+    <Badge variant="secondary">
+      Secondary+
+    </Badge>
+    
+    <Badge variant="secondary">
+      Secondary+
+    </Badge>
+   </div>
+   <ScrollBar orientation="horizontal" />
+  </ScrollArea>
+   <Separator />
   <Breadcrumb class="flex flex-row hidden">
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -36,8 +108,11 @@ Users2,
   </Breadcrumb>
   
   <div class="flex  flex-row  border-t-0 max-w-[1900px] mx-auto px-4">
+    <div class="h-full md:w-[20%]  hidden md:block">
+      <SidebarLeft2 />
+    </div>
   
-    <div class="md:w-[75%] flex flex-col  ">
+    <div class="md:w-[55%] flex flex-col  ">
      
       <header class="w-full fixed bottom-0 left-0 z-30 flex h-14 items-center gap-4 border-b bg-background px-4 sm:static sm:h-auto sm:border-0 sm:bg-transparent sm:px-6">
         <Sheet>
