@@ -37,8 +37,8 @@ const tooltipTriggers = {
       <input type="range" v-model="year" :min="yearRange[0]" :max="yearRange[1]" />
     </header>
     <!-- topojson map -->
-    <VisSingleContainer :data="mapData" :height="550" :duration="0" class="card">
-      <VisTopoJSONMap :topojson="WorldMapTopoJSON" :areaColor="areaColor(Number(year))" disableZoom />
+    <VisSingleContainer :data="mapData"  :duration="0" class="h-[250px] md:h-[400px]">
+      <VisTopoJSONMap :topojson="WorldMapTopoJSON" :areaColor="areaColor(Number(year))"  />
       <VisTooltip :triggers="tooltipTriggers" />
     </VisSingleContainer>
     <!-- gradient legend-->
