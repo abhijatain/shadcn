@@ -279,8 +279,8 @@ const articles2 = ref([
 </script>
 
 <template>
-  <div class="hidden md:block">
-    <CarouselTop />
+  <div class="">
+    <WorldMap />
   </div>
   
    <div class="">
