@@ -17,7 +17,7 @@ const yearScale = Scale.scaleLinear()
 // Custom Color Scale based on categories
 const colorScale = d3.scaleThreshold()
   .domain([40, 55, 70, 85, 100])  // Thresholds for categories
-  .range(['#d73027', '#fc8d59', '#fee08b', '#d9ef8b', '#1a9850', '#cccccc']);  // Colors for categories
+  .range(['#83000B', '#FF3022', '#FFB035', '#8eb0d6', '#005f9a', '#cccccc']);  // Colors for categories
 
 const year = ref(2024)
 
@@ -66,11 +66,11 @@ const tooltipTriggers = {
         <DropdownMenuTrigger><Button variant="outline" class="h-8">View Legend</Button></DropdownMenuTrigger>
         <DropdownMenuContent>
           <div class="legend">
-            <div class="legend-item"><span class="legend-color" style="background-color: #1a9850;"></span>Good: 85–100 points</div>
-            <div class="legend-item"><span class="legend-color" style="background-color: #d9ef8b;"></span>Satisfactory: 70–85 points</div>
-            <div class="legend-item"><span class="legend-color" style="background-color: #fee08b;"></span>Problematic: 55–70 points</div>
-            <div class="legend-item"><span class="legend-color" style="background-color: #fc8d59;"></span>Difficult: 40–55 points</div>
-            <div class="legend-item"><span class="legend-color" style="background-color: #d73027;"></span>Very serious: <40 points</div>
+            <div class="legend-item"><span class="legend-color" style="background-color: #005f9a;"></span>Good: 85–100 points</div>
+            <div class="legend-item"><span class="legend-color" style="background-color: #8eb0d6;"></span>Satisfactory: 70–85 points</div>
+            <div class="legend-item"><span class="legend-color" style="background-color: #FFB035;"></span>Problematic: 55–70 points</div>
+            <div class="legend-item"><span class="legend-color" style="background-color: #FF3022;"></span>Difficult: 40–55 points</div>
+            <div class="legend-item"><span class="legend-color" style="background-color: #83000B;"></span>Very serious: <40 points</div>
             <div class="legend-item"><span class="legend-color" style="background-color: #cccccc;"></span>Not classified</div>
           </div>
         </DropdownMenuContent>
