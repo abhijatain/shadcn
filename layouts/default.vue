@@ -205,7 +205,8 @@ import DarkMode from '~/components/DarkMode.vue';
   <div>
     <ArticleBottom />
   </div>
-  
+  <Separator class="my-6"/>
+  <Footer />
   </div>
   
 

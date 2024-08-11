@@ -16,7 +16,7 @@
             </div>
             
             <div class="md:w-[50%] p-8  flex flex-col justify-start md:gap-8 gap-4">
-                <h1 class="font-bold text-xl">Abki bar modi sarkar ?</h1>
+              
                 <div class="flex gap-6"> 
                     <div class="w-[50%] flex flex-col gap-4">
                         <img  src="https://cdn.statcdn.com/Infographic/images/normal/32732.jpeg" class="border rounded-lg shadow"/>
