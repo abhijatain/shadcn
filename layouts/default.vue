@@ -110,12 +110,13 @@ import DarkMode from '~/components/DarkMode.vue';
           </BreadcrumbList>
   </Breadcrumb>
   
-  <div class="flex  flex-row  border-t-0 max-w-[1900px] mx-auto px-4">
+  <div class="">
+    <div class="flex  flex-row  border-t-0 max-w-[1900px] mx-auto px-4">
     <div class="h-full md:w-[20%]  hidden md:block">
       <SidebarLeft2 />
     </div>
   
-    <div class="md:w-[55%] flex flex-col  ">
+    <div class="md:w-[75%] lg:w-[62%] flex flex-col  ">
      
       <header class="w-full fixed bottom-0 left-0 z-30 flex h-14 items-center gap-4 border-b bg-background px-4 sm:static sm:h-auto sm:border-0 sm:bg-transparent sm:px-6">
         <Sheet>
@@ -191,10 +192,21 @@ import DarkMode from '~/components/DarkMode.vue';
 
       
     </div>
-    <div class="h-full md:w-[25%]  hidden md:block">
+    <div class="h-full lg:w-[18%]  hidden lg:block">
       <SidebarRight />
     </div>
     
   </div>
+  <Separator />
+  <div>
+    <ArticleMiddle />
+  </div>
+  <Separator />
+  <div>
+    <ArticleBottom />
+  </div>
+  
+  </div>
+  
 
 </template>
