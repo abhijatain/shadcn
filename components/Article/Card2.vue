@@ -19,8 +19,8 @@
 </p>
               <div class="flex gap-3 flex-col">
                 <div class="flex gap-2 p-2 flex-col mb-6">
-                  <ProgressBar :value="85" color="#DD6892" lean="Right" text="Content right  85% " height="16"/>
-                  <ProgressBar :value="65" color="#3C6F9C" lean="Center" text="Author views center  65% " height="16"/>
+                  <ProgressBar :value="85" color="#7A2048" lean="Right" text="Content right  85% " height="16"/>
+                  <ProgressBar :value="65" color="#408EC6" lean="Center" text="Author views center  65% " height="16"/>
                 </div>
               </div>
             </div>

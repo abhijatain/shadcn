@@ -13,8 +13,8 @@ const articles = ref([
     authorLeanReason: 'The article provides a balanced view but includes critical insights into government policies.',
     replies: 310,
     views: '320K',
-    topicColor: '#512C96', // Left
-    authorColor: '#3C6F9C', // Light Green (Center)
+    topicColor: '#1E2761', // Left
+    authorColor: '#408EC6', // Light Green (Center)
     topicLeanValue: 'left',
     authorLeanValue: 'center'
   },
@@ -30,8 +30,8 @@ const articles = ref([
     authorLeanReason: 'The article’s author is known for a left-leaning stance on economic policies.',
     replies: 150,
     views: '200K',
-    topicColor: '#512C96', // Left
-    authorColor: '#512C96', // Left
+    topicColor: '#1E2761', // Left
+    authorColor: '#1E2761', // Left
     topicLeanValue: 'left',
     authorLeanValue: 'left'
   },
@@ -47,8 +47,8 @@ const articles = ref([
     authorLeanReason: 'The author maintains a neutral stance while analyzing economic policies.',
     replies: 220,
     views: '275K',
-    topicColor: '#3C6F9C', // Light Green (Center)
-    authorColor: '#3C6F9C', // Light Green (Center)
+    topicColor: '#408EC6', // Light Green (Center)
+    authorColor: '#408EC6', // Light Green (Center)
     topicLeanValue: 'center',
     authorLeanValue: 'center'
   },
@@ -64,8 +64,8 @@ const articles = ref([
     authorLeanReason: 'The author’s views are more centered but offer a critical perspective.',
     replies: 180,
     views: '250K',
-    topicColor: '#512C96', // Left
-    authorColor: '#3C6F9C', // Light Green (Center)
+    topicColor: '#1E2761', // Left
+    authorColor: '#408EC6', // Light Green (Center)
     topicLeanValue: 'left',
     authorLeanValue: 'center'
   },
@@ -81,8 +81,8 @@ const articles = ref([
     authorLeanReason: 'The author’s views are more centered but provide a critical analysis of financial policies.',
     replies: 195,
     views: '260K',
-    topicColor: '#3C6F9C', // Light Green (Center)
-    authorColor: '#3C6F9C', // Light Green (Center)
+    topicColor: '#408EC6', // Light Green (Center)
+    authorColor: '#408EC6', // Light Green (Center)
     topicLeanValue: 'center-left',
     authorLeanValue: 'center'
   },
@@ -98,8 +98,8 @@ const articles = ref([
     authorLeanReason: 'The author’s views lean towards the right, providing a supportive analysis.',
     replies: 140,
     views: '210K',
-    topicColor: '#3C6F9C', // Light Green (Center)
-    authorColor: '#DD6892', // Right
+    topicColor: '#408EC6', // Light Green (Center)
+    authorColor: '#7A2048', // Right
     topicLeanValue: 'center',
     authorLeanValue: 'right'
   },
@@ -115,8 +115,8 @@ const articles = ref([
     authorLeanReason: 'The author provides a center view while discussing the effectiveness of the policies.',
     replies: 250,
     views: '290K',
-    topicColor: '#DD6892', // Right
-    authorColor: '#3C6F9C', // Light Green (Center)
+    topicColor: '#7A2048', // Right
+    authorColor: '#408EC6', // Light Green (Center)
     topicLeanValue: 'right',
     authorLeanValue: 'center'
   },
@@ -132,8 +132,8 @@ const articles = ref([
     authorLeanReason: 'The author maintains a neutral stance but provides a critical perspective on the financial reforms.',
     replies: 230,
     views: '280K',
-    topicColor: '#512C96', // Left
-    authorColor: '#3C6F9C', // Light Green (Center)
+    topicColor: '#1E2761', // Left
+    authorColor: '#408EC6', // Light Green (Center)
     topicLeanValue: 'left',
     authorLeanValue: 'center'
   },
@@ -149,8 +149,8 @@ const articles = ref([
     authorLeanReason: 'The author provides a balanced view but highlights criticisms of the reforms.',
     replies: 160,
     views: '225K',
-    topicColor: '#512C96', // Left
-    authorColor: '#3C6F9C', // Light Green (Center)
+    topicColor: '#1E2761', // Left
+    authorColor: '#408EC6', // Light Green (Center)
     topicLeanValue: 'left',
     authorLeanValue: 'center'
   },
@@ -166,8 +166,8 @@ const articles = ref([
     authorLeanReason: 'The author presents a balanced view with a focus on the effectiveness of the policies.',
     replies: 210,
     views: '270K',
-    topicColor: '#3C6F9C', // Light Green (Center)
-    authorColor: '#3C6F9C', // Light Green (Center)
+    topicColor: '#408EC6', // Light Green (Center)
+    authorColor: '#408EC6', // Light Green (Center)
     topicLeanValue: 'center',
     authorLeanValue: 'center'
   },
@@ -183,8 +183,8 @@ const articles = ref([
     authorLeanReason: 'The author provides a balanced perspective with a critical analysis of the reforms.',
     replies: 190,
     views: '265K',
-    topicColor: '#3C6F9C', // Light Green (Center)
-    authorColor: '#3C6F9C', // Light Green (Center)
+    topicColor: '#408EC6', // Light Green (Center)
+    authorColor: '#408EC6', // Light Green (Center)
     topicLeanValue: 'center-left',
     authorLeanValue: 'center'
   },
@@ -200,8 +200,8 @@ const articles = ref([
     authorLeanReason: 'The author maintains a neutral stance but provides a critical perspective on the economic reforms.',
     replies: 200,
     views: '275K',
-    topicColor: '#512C96', // Left
-    authorColor: '#3C6F9C', // Light Green (Center)
+    topicColor: '#1E2761', // Left
+    authorColor: '#408EC6', // Light Green (Center)
     topicLeanValue: 'left',
     authorLeanValue: 'center'
   },
