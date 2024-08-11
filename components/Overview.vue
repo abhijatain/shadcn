@@ -24,7 +24,7 @@ const data2 = [
     index="name"
     :data="data"
     :categories="['left', 'center','right']"
-    :colors="['#035397','#399918','#E8630A']"
+    :colors="['#0C2D57','#FFB0B0','#FC6736']"
     :rounded-corners="4"
     :type="'stacked'"
   />
