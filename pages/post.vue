@@ -1,6 +1,6 @@
 <template>
  
-    <div class="m-6 flex flex-col gap-6">
+    <div class="md:m-6 m-2 flex flex-col gap-6">
         <div class="flex justify-between ">
             <p class="text-sm">Published 12 hours ago • 
             <Badge variant="outline" class="mx-1 hidden md:inline-block">Gaza</Badge>
@@ -76,8 +76,8 @@
         </Tabs>
         
         <Separator label="More News"/>
-        <Tabs default-value="more">
-            <TabsList>
+        <Tabs default-value="more" >
+            <TabsList class="mb-4">
                 <TabsTrigger value="more">
                 For You
             </TabsTrigger>
@@ -89,36 +89,13 @@
             </TabsList>
             <TabsContent value="more">
                 <div class="flex gap-2 flex-col ">
-                    <div class="    " >
-                        <div class=" flex flex-col items-center justify-center">
-                            <div class="flex flex-row rounded-lg overflow-hidden ">
-                            <!--E11-->
-                            <!-- <div class="h-48 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1570797197190-8e003a00c846?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80')"></div>-->
-                            <img class="h-[100px] w-[100px] rounded-lg object-cover" src="https://cdn.statcdn.com/Infographic/images/normal/27391.jpeg" alt="Home in Countryside" />
-
-                            <div class="px-3 ">
-                            
-                                <p class=" font-semibold text-lg  ">Boxer Lin Yu-ting wins gold, following Imane Khelif to conclude an Olympics filled with scrutiny</p>
-
-                                <div class="flex gap-3 flex-col">
-
-                        
-                        <div class="flex gap-2 py-2 flex-col w-[280px] mb-6">
-                        <ProgressBar :value="85" color="#1E2761" lean="Right" text="Content right  85% " height="16"/>
-                        <ProgressBar :value="65" color="#408EC6" lean="Center" text="Author views center  65% " height="16"/>
-                        </div>
-
-                        </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div class="antialiased  w-full  " >
                         <div class=" flex flex-col items-center justify-center">
                             <div class="flex flex-row rounded-lg overflow-hidden ">
                             <!--E11-->
                             <!-- <div class="h-48 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1570797197190-8e003a00c846?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80')"></div>-->
-                            <img class="h-[100px] w-[100px] rounded-lg object-cover" src="https://cdn.statcdn.com/Infographic/images/normal/27391.jpeg" alt="Home in Countryside" />
+                            <img class="h-[80px] w-[80px] md:h-[100px] md:w-[100px] rounded-lg object-cover" src="https://cdn.statcdn.com/Infographic/images/normal/27391.jpeg" alt="Home in Countryside" />
 
                             <div class="px-3 ">
                             
@@ -127,7 +104,7 @@
                                 <div class="flex gap-3 flex-col">
 
                         
-                        <div class="flex gap-2 py-2 flex-col w-[280px] mb-6">
+                        <div class="flex gap-2 py-2 flex-col md:w-[280px] mb-6">
                         <ProgressBar :value="85" color="#1E2761" lean="Right" text="Content right  85% " height="16"/>
                                         <ProgressBar :value="65" color="#408EC6" lean="Center" text="Author views center  65% " height="16"/>
                         </div>
@@ -142,7 +119,7 @@
                             <div class="flex flex-row rounded-lg overflow-hidden ">
                             <!--E11-->
                             <!-- <div class="h-48 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1570797197190-8e003a00c846?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80')"></div>-->
-                            <img class="h-[100px] w-[100px] rounded-lg object-cover" src="https://cdn.statcdn.com/Infographic/images/normal/27391.jpeg" alt="Home in Countryside" />
+                            <img class="h-[80px] w-[80px] md:h-[100px] md:w-[100px] rounded-lg object-cover" src="https://cdn.statcdn.com/Infographic/images/normal/27391.jpeg" alt="Home in Countryside" />
 
                             <div class="px-3 ">
                             
@@ -151,7 +128,7 @@
                                 <div class="flex gap-3 flex-col">
 
                         
-                        <div class="flex gap-2 py-2 flex-col w-[280px] mb-6">
+                        <div class="flex gap-2 py-2 flex-col md:w-[280px] mb-6">
                         <ProgressBar :value="85" color="#1E2761" lean="Right" text="Content right  85% " height="16"/>
                                         <ProgressBar :value="65" color="#408EC6" lean="Center" text="Author views center  65% " height="16"/>
                         </div>
@@ -166,7 +143,7 @@
                             <div class="flex flex-row rounded-lg overflow-hidden ">
                             <!--E11-->
                             <!-- <div class="h-48 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1570797197190-8e003a00c846?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80')"></div>-->
-                            <img class="h-[100px] w-[100px] rounded-lg object-cover" src="https://cdn.statcdn.com/Infographic/images/normal/27391.jpeg" alt="Home in Countryside" />
+                            <img class="h-[80px] w-[80px] md:h-[100px] md:w-[100px] rounded-lg object-cover" src="https://cdn.statcdn.com/Infographic/images/normal/27391.jpeg" alt="Home in Countryside" />
 
                             <div class="px-3 ">
                             
@@ -175,7 +152,7 @@
                                 <div class="flex gap-3 flex-col">
 
                         
-                        <div class="flex gap-2 py-2 flex-col w-[280px] mb-6">
+                        <div class="flex gap-2 py-2 flex-col md:w-[280px] mb-6">
                         <ProgressBar :value="85" color="#1E2761" lean="Right" text="Content right  85% " height="16"/>
                                         <ProgressBar :value="65" color="#408EC6" lean="Center" text="Author views center  65% " height="16"/>
                         </div>
@@ -190,7 +167,7 @@
                             <div class="flex flex-row rounded-lg overflow-hidden ">
                             <!--E11-->
                             <!-- <div class="h-48 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1570797197190-8e003a00c846?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80')"></div>-->
-                            <img class="h-[100px] w-[100px] rounded-lg object-cover" src="https://cdn.statcdn.com/Infographic/images/normal/27391.jpeg" alt="Home in Countryside" />
+                            <img class="h-[80px] w-[80px] md:h-[100px] md:w-[100px] rounded-lg" src="https://cdn.statcdn.com/Infographic/images/normal/27391.jpeg" alt="Home in Countryside" />
 
                             <div class="px-3 ">
                             
@@ -199,31 +176,7 @@
                                 <div class="flex gap-3 flex-col">
 
                         
-                        <div class="flex gap-2 py-2 flex-col w-[280px] mb-6">
-                        <ProgressBar :value="85" color="#1E2761" lean="Right" text="Content right  85% " height="16"/>
-                                        <ProgressBar :value="65" color="#408EC6" lean="Center" text="Author views center  65% " height="16"/>
-                        </div>
-
-                        </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="antialiased  w-full  " >
-                        <div class=" flex flex-col items-center justify-center">
-                            <div class="flex flex-row rounded-lg overflow-hidden ">
-                            <!--E11-->
-                            <!-- <div class="h-48 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1570797197190-8e003a00c846?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80')"></div>-->
-                            <img class="h-[100px] w-[100px] rounded-lg object-cover" src="https://cdn.statcdn.com/Infographic/images/normal/27391.jpeg" alt="Home in Countryside" />
-
-                            <div class="px-3 ">
-                            
-                                <p class=" font-semibold text-lg  text-wrap">Boxer Lin Yu-ting wins gold, following Imane Khelif to conclude an Olympics filled with scrutiny</p>
-
-                                <div class="flex gap-3 flex-col">
-
-                        
-                        <div class="flex gap-2 py-2 flex-col w-[280px] mb-6">
+                        <div class="flex gap-2 py-2 flex-col md:w-[280px] mb-6">
                         <ProgressBar :value="85" color="#1E2761" lean="Right" text="Content right  85% " height="16"/>
                                         <ProgressBar :value="65" color="#408EC6" lean="Center" text="Author views center  65% " height="16"/>
                         </div>
