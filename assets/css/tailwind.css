@@ -22,11 +22,11 @@
     /* change to any hsl value you want */
     --vis-secondary-color: 160 81% 40%;
     --vis-text-color: var(--muted-foreground);
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-  
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    --background: 0 10% 93%; /* hsl(0, 10%, 93%) */
+    --foreground: 240 10% 3.9%; /* Keeping the existing value */
+
+    --card: 0 10% 93%; /* hsl(0, 10%, 93%) */
+    --card-foreground: 240 10% 3.9%; 
   
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;

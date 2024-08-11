@@ -236,8 +236,8 @@ const articles2 = ref([
     authorLeanReason: 'The author maintains a neutral stance but provides a critical perspective on the financial reforms.',
     replies: 230,
     views: '280K',
-    topicColor: '#035397', // Left
-    authorColor: '#399918', // Light Green (Center)
+    topicColor: '#0C2D57', // Left
+    authorColor: '#FFB0B0', // Light Green (Center)
     topicLeanValue: 'left',
     authorLeanValue: 'center'
   },
@@ -253,8 +253,8 @@ const articles2 = ref([
     authorLeanReason: 'The author provides a balanced view but highlights criticisms of the reforms.',
     replies: 160,
     views: '225K',
-    topicColor: '#035397', // Left
-    authorColor: '#399918', // Light Green (Center)
+    topicColor: '#0C2D57', // Left
+    authorColor: '#FFB0B0', // Light Green (Center)
     topicLeanValue: 'left',
     authorLeanValue: 'center'
   },
@@ -270,8 +270,8 @@ const articles2 = ref([
     authorLeanReason: 'The author presents a balanced view with a focus on the effectiveness of the policies.',
     replies: 210,
     views: '270K',
-    topicColor: '#399918', // Light Green (Center)
-    authorColor: '#399918', // Light Green (Center)
+    topicColor: '#FC6736', // Light Green (Center)
+    authorColor: '#FC6736', // Light Green (Center)
     topicLeanValue: 'center',
     authorLeanValue: 'center'
   },
