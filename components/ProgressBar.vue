@@ -27,7 +27,7 @@
     },
     color: {
       type: String,
-      default: '#035397', // Default color if none is provided
+      default: '#512C96', // Default color if none is provided
     },
     height: {
       type: Number,

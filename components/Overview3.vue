@@ -79,7 +79,7 @@ const x = (d, i) => i
 const y = chartLabels.map(i => (d) => d[i.key])
 const tickFormat = (_, i) => data[i].media
 
-const color = (d, i) => ['#035397', '#399918', '#E8630A'][i]
+const color = (d, i) => ['#512C96','#3C6F9C','#DD6892'][i]
 
 function tooltipTemplate(d) {
   const title = `<div style="color: #666; text-align: center">${d.media}</div>`

@@ -32,7 +32,7 @@
     name: item.key.charAt(0).toUpperCase() + item.key.slice(1)
   }))
   
-  const colors = ['#035397','#399918','#E8630A']
+  const colors = ['#141E46','#BAD7E9','#BB2525']
   
   const color = (d, i) => colors[i % colors.length]
   </script>

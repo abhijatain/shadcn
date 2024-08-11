@@ -8,8 +8,8 @@
             <div class="md:w-[50%] p-8  flex gap-4 flex-col md:border-r">
                 <h1 class="font-bold text-xl">Latest Israel-Hamas Conflict News</h1>
                 <img  src="https://cdn.statcdn.com/Infographic/images/normal/32725.jpeg" class=" object-cover border rounded-lg shadow md:h-[500px]"/>
-                <ProgressBar :value="65" color="#399918" lean="Center" text="Author views center  65% " height="16"/>
-                <ProgressBar :value="85" color="#E8630A" lean="Right" text="Content right  85% " height="16"/>
+                <ProgressBar :value="65" color="#3C6F9C" lean="Center" text="Author views center  65% " height="16"/>
+                <ProgressBar :value="85" color="#DD6892" lean="Right" text="Content right  85% " height="16"/>
                 <h1 class="font-bold text-2xl">
                     Boxer Lin Yu-ting wins gold, following Imane Khelif to conclude an Olympics filled with scrutiny
                 </h1>
@@ -20,7 +20,7 @@
                 <div class="flex gap-6"> 
                     <div class="w-[50%] flex flex-col gap-4">
                         <img  src="https://cdn.statcdn.com/Infographic/images/normal/32732.jpeg" class="border rounded-lg shadow"/>
-                        <ProgressBar :value="85" color="#E8630A" lean="Right" text="Content right  85% " height="16"/>
+                        <ProgressBar :value="85" color="#DD6892" lean="Right" text="Content right  85% " height="16"/>
                         
                         <h1 class=" ">
                             Boxer Lin Yu-ting wins gold, following Imane Khelif to conclude an Olympics filled with scrutiny
@@ -28,7 +28,7 @@
                     </div>
                     <div class="w-[50%] flex flex-col gap-4"">
                         <img  src="https://cdn.statcdn.com/Infographic/images/normal/32694.jpeg" class="border rounded-lg shadow"/>
-                        <ProgressBar :value="65" color="#399918" lean="Center" text="Author views center  65% " height="16"/>
+                        <ProgressBar :value="65" color="#3C6F9C" lean="Center" text="Author views center  65% " height="16"/>
                 
                         <h1 class=" ">
                             Boxer Lin Yu-ting wins gold, following Imane Khelif to conclude an Olympics filled with scrutiny
@@ -53,8 +53,8 @@
 
                         
                         <div class="flex gap-2 py-2 flex-col w-[280px] mb-6">
-                        <ProgressBar :value="85" color="#035397" lean="Right" text="Content right  85% " height="16"/>
-                                        <ProgressBar :value="65" color="#399918" lean="Center" text="Author views center  65% " height="16"/>
+                        <ProgressBar :value="85" color="#512C96" lean="Right" text="Content right  85% " height="16"/>
+                                        <ProgressBar :value="65" color="#3C6F9C" lean="Center" text="Author views center  65% " height="16"/>
                         </div>
 
                         </div>

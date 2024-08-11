@@ -14,8 +14,8 @@ export const articles = [
         authorLeanReason: 'The author maintains a balanced view, providing both positive and critical insights.',
         replies: 230,
         views: '280K',
-        topicColor: '#035397', // Left
-        authorColor: '#399918', // Light Green (Center)
+        topicColor: '#512C96', // Left
+        authorColor: '#3C6F9C', // Light Green (Center)
         topicLeanValue: 'left',
         authorLeanValue: 'center'
     },
@@ -74,8 +74,8 @@ export const articles = [
         authorLeanReason: 'The author maintains a balanced view, providing both positive and critical insights.',
         replies: 230,
         views: '280K',
-        topicColor: '#035397', // Left
-        authorColor: '#399918', // Light Green (Center)
+        topicColor: '#512C96', // Left
+        authorColor: '#3C6F9C', // Light Green (Center)
         topicLeanValue: 'left',
         authorLeanValue: 'center'
     },
